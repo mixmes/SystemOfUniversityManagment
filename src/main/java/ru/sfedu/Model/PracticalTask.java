@@ -5,11 +5,13 @@ import java.util.Objects;
 
 public class PracticalTask {
     private int ID;
+    private String information;
     private File task;
-    PracticalTask(){}
-    PracticalTask(int ID,String URI){
+    PracticalTask(){this.information = "Null";}
+    PracticalTask(int ID,String URI, String information){
         this.ID = ID;
         this.task = new File(URI);
+        this.information = information;
     }
 
     public int getID() {
@@ -26,6 +28,14 @@ public class PracticalTask {
 
     public void setTask(File task) {
         this.task = task;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
     }
 
     @Override

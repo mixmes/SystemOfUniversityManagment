@@ -1,9 +1,13 @@
 package ru.sfedu.Model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class StudentGroup {
+    private static final Logger log =LogManager.getLogger(Discipline.class);
     private int ID;
     private int course;
     private String name;
@@ -59,6 +63,15 @@ public class StudentGroup {
     public void setGroupComposition(ArrayList<Student> groupComposition) {
         this.groupComposition = groupComposition;
     }
+    public void addStudentToGroup(Student student){
+        groupComposition.add(student);
+        log.info("Student was added to group");
+    }
+    public void deleteStudentFromGroup(Student student){
+        groupComposition.remove(student);
+        log.info("Student was deleted from group");
+    }
+
 
     @Override
     public boolean equals(Object o) {

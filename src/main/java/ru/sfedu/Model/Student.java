@@ -1,9 +1,14 @@
 package ru.sfedu.Model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Student {
+    private static final Logger log = LogManager.getLogger(Discipline.class);
     private int ID;
     private String name ;
     private MarkBook markBook = new MarkBook();
@@ -62,6 +67,10 @@ public class Student {
 
     public void setScheduleOfUniversityEvents(ScheduleOfUniversityEvents scheduleOfUniversityEvents) {
         this.scheduleOfUniversityEvents = scheduleOfUniversityEvents;
+    }
+    public void publishHomeWork(Discipline discipline, File file, String information){
+        discipline.getIssue().getTaskIssue().get(information).put(this,file);
+        log.info("Home work "+"'"+information+"'"+" of"+this.getName()+"was published");
     }
 
     @Override

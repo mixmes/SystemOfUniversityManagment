@@ -8,7 +8,7 @@ import java.util.Objects;
 public class Issue {
     private int ID;
     private int disciplineID;
-    private HashMap<String, ArrayList<File>> taskIssue = new HashMap<>();
+    private HashMap<String, HashMap<Student,File>> taskIssue = new HashMap<>();
     private HashMap<String, ArrayList<String>> attendance = new HashMap<>();
     Issue(){}
     Issue(int ID, int disciplineID){
@@ -32,11 +32,11 @@ public class Issue {
         this.disciplineID = disciplineID;
     }
 
-    public HashMap<String, ArrayList<File>> getTaskIssue() {
+    public HashMap<String, HashMap<Student, File>> getTaskIssue() {
         return taskIssue;
     }
 
-    public void setTaskIssue(HashMap<String, ArrayList<File>> taskIssue) {
+    public void setTaskIssue(HashMap<String, HashMap<Student, File>> taskIssue) {
         this.taskIssue = taskIssue;
     }
 

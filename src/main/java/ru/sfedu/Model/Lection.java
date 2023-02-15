@@ -5,11 +5,15 @@ import java.util.Objects;
 
 public class Lection {
     private int ID;
+    private String information;
     private File lection ;
-    Lection(){}
-    Lection(int ID,String URI){
+    Lection(){
+        this.information = "Null";
+    }
+    Lection(int ID,String URI,String information){
         this.ID = ID;
         this.lection = new File(URI);
+        this.information = information;
     }
 
     public int getID() {
@@ -26,6 +30,14 @@ public class Lection {
 
     public void setLection(File lection) {
         this.lection = lection;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
     }
 
     @Override
