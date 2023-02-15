@@ -2,6 +2,7 @@ package ru.sfedu.Model;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -9,7 +10,7 @@ public class Issue {
     private int ID;
     private int disciplineID;
     private HashMap<String, HashMap<Student,File>> taskIssue = new HashMap<>();
-    private HashMap<String, ArrayList<String>> attendance = new HashMap<>();
+    private HashMap<Date, ArrayList<String>> attendance = new HashMap<>();
     Issue(){}
     Issue(int ID, int disciplineID){
         this.ID = ID;
@@ -40,11 +41,11 @@ public class Issue {
         this.taskIssue = taskIssue;
     }
 
-    public HashMap<String, ArrayList<String>> getAttendance() {
+    public HashMap<Date, ArrayList<String>> getAttendance() {
         return attendance;
     }
 
-    public void setAttendance(HashMap<String, ArrayList<String>> attendance) {
+    public void setAttendance(HashMap<Date, ArrayList<String>> attendance) {
         this.attendance = attendance;
     }
 

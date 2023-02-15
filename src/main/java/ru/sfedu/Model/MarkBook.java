@@ -8,7 +8,8 @@ public class MarkBook {
     private int studentID;
     HashMap<String,Integer> totalMark = new HashMap<>();
     HashMap<String,HashMap<String,Integer>> points = new HashMap<>();
-    MarkBook(){}
+    MarkBook(){
+    }
     MarkBook(int ID, int studentID){
         this.ID = ID;
         this.studentID = studentID;
