@@ -1,16 +1,18 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.Date;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Event {
-    private int ID;
-    private String place;
-    private Date time = new Date();
-    Event(){
+    protected int ID;
+    protected String place;
+    protected Date time = new Date();
+    protected Event(){
         this.place = "Null";
     }
-    Event(int ID, String place , Date time ){
+    protected Event(int ID, String place , Date time ){
         this.ID = ID;
         this.place = place;
         this.time = time;

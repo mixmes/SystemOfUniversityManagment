@@ -1,18 +1,23 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Discipline {
     private int ID;
     private String name;
     private String typeOfMarking;
+    @XmlTransient
     private Issue issue =  new Issue();
+    @XmlTransient
     private EducationalMaterial educationalMaterial = new EducationalMaterial();
-    Discipline(){
+    public Discipline(){
         this.name = "Null";
         this.typeOfMarking = "Null";
     }
-    Discipline(int id, String name , String typeOfMarking){
+    public Discipline(int id, String name , String typeOfMarking){
         this.ID = id;
         this.name =  name;
         this.typeOfMarking = typeOfMarking;
@@ -63,11 +68,11 @@ public class Discipline {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Discipline that = (Discipline) o;
-        return ID == that.ID && Objects.equals(name, that.name) && Objects.equals(typeOfMarking, that.typeOfMarking) && Objects.equals(issue, that.issue) && Objects.equals(educationalMaterial, that.educationalMaterial);
+        return ID == that.ID && Objects.equals(name, that.name) && Objects.equals(typeOfMarking, that.typeOfMarking);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ID, name, typeOfMarking, issue, educationalMaterial);
+        return Objects.hash(ID, name, typeOfMarking);
     }
 }

@@ -1,13 +1,19 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import java.util.Date;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class UniversityEvent extends Event {
     private String information;
-    UniversityEvent(){
+    public UniversityEvent(){
         this.information = "Null";
     }
-    UniversityEvent(String information){
+    public UniversityEvent(int ID, String place, Date time, String information){
+        this.ID = ID;
+        this.place = place;
+        this.time = time;
         this.information = information;
     }
 

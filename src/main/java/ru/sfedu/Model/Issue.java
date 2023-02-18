@@ -1,18 +1,20 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Issue {
     private int ID;
     private int disciplineID;
     private HashMap<String, HashMap<Student,File>> taskIssue = new HashMap<>();
     private HashMap<Date, ArrayList<String>> attendance = new HashMap<>();
-    Issue(){}
-    Issue(int ID, int disciplineID){
+    public Issue(){}
+    public Issue(int ID, int disciplineID){
         this.ID = ID;
         this.disciplineID = disciplineID;
     }
@@ -54,11 +56,11 @@ public class Issue {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Issue issue = (Issue) o;
-        return ID == issue.ID && disciplineID == issue.disciplineID && Objects.equals(taskIssue, issue.taskIssue) && Objects.equals(attendance, issue.attendance);
+        return ID == issue.ID && disciplineID == issue.disciplineID ;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ID, disciplineID, taskIssue, attendance);
+        return Objects.hash(ID, disciplineID);
     }
 }

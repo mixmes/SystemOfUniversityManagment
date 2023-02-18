@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapper>
+    <beans>
+        <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="educationalMaterial">
+            <ID>2</ID>
+            <disciplineID>2</disciplineID>
+            <lections>
+                <ID>2</ID>
+                <information>Лекция от 21.1.12</information>
+                <lection>/home/mihail/FilesForSystem/Lections</lection>
+            </lections>
+            <tasks>
+                <ID>2</ID>
+                <information>Дедлайн 21.11.2022</information>
+                <task>/home/mihail/FilesForSystem/PracticalTask</task>
+            </tasks>
+        </beans>
+    </beans>
+</wrapper>

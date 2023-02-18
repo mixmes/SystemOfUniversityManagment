@@ -1,15 +1,22 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.ArrayList;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class EducationalMaterial {
+    @XmlElement(name = "ID")
     private int ID;
+    @XmlElement(name = "disciplineID")
     private int disciplineID;
+    @XmlElement(name = "lections")
     private ArrayList<Lection> lections = new ArrayList<>();
+    @XmlElement(name = "tasks")
     private ArrayList<PracticalTask> tasks = new ArrayList<>();
-    EducationalMaterial(){}
-    EducationalMaterial(int ID,int disciplineID ){
+    public EducationalMaterial(){}
+    public EducationalMaterial(int ID,int disciplineID ){
         this.ID = ID;
         this.disciplineID = ID;
     }

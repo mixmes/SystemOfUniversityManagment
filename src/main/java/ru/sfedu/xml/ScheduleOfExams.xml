@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapper>
+    <beans>
+        <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="scheduleOfExams">
+            <ID>2</ID>
+            <semester>2</semester>
+            <exams>
+                <ID>1</ID>
+                <place>509k</place>
+                <time>2023-02-17T20:27:08.003+03:00</time>
+                <nameOfDiscipline>Math</nameOfDiscipline>
+                <type>Экзамен</type>
+                <nameOfTeacher>Бобров Виктор Михайлович</nameOfTeacher>
+            </exams>
+            <exams>
+                <ID>2</ID>
+                <place>509k</place>
+                <time>2023-02-17T20:27:08.003+03:00</time>
+                <nameOfDiscipline>Eng</nameOfDiscipline>
+                <type>Пересдача</type>
+                <nameOfTeacher>Казачков Дмитрий Анатольевич</nameOfTeacher>
+            </exams>
+            <exams>
+                <ID>3</ID>
+                <place>511k</place>
+                <time>2023-02-17T20:27:08.003+03:00</time>
+                <nameOfDiscipline>philosophy</nameOfDiscipline>
+                <type>Экзамен</type>
+                <nameOfTeacher>Сократов Платон Иванович</nameOfTeacher>
+            </exams>
+        </beans>
+    </beans>
+</wrapper>

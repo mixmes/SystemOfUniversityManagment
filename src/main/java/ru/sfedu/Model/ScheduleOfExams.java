@@ -1,12 +1,16 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.ArrayList;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class ScheduleOfExams extends Schedule {
     private ArrayList<Exam> exams = new ArrayList<>();
-    ScheduleOfExams(){}
-    ScheduleOfExams(ArrayList<Exam> exams){
+    public ScheduleOfExams(){}
+    public ScheduleOfExams(int ID,int semester,ArrayList<Exam> exams){
+        this.ID = ID;
+        this.semester = semester;
         this.exams = exams;
     }
 
@@ -23,7 +27,7 @@ public class ScheduleOfExams extends Schedule {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ScheduleOfExams that = (ScheduleOfExams) o;
-        return Objects.equals(exams, that.exams);
+        return Objects.equals(exams, that.exams) && ID == that.ID;
     }
 
     @Override

@@ -1,16 +1,18 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.io.File;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Lection {
     private int ID;
     private String information;
     private File lection ;
-    Lection(){
+    public Lection(){
         this.information = "Null";
     }
-    Lection(int ID,String URI,String information){
+    public Lection(int ID,String URI,String information){
         this.ID = ID;
         this.lection = new File(URI);
         this.information = information;

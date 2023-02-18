@@ -3,9 +3,11 @@ package ru.sfedu.Model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.ArrayList;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class StudentGroup {
     private static final Logger log =LogManager.getLogger(Discipline.class);
     private int ID;
@@ -13,11 +15,11 @@ public class StudentGroup {
     private String name;
     private String codeOfGroup;
     ArrayList<Student> groupComposition = new ArrayList<>();
-    StudentGroup(){
+    public StudentGroup(){
         this.name = "Null";
         this.codeOfGroup = "XXXXXXXXX";
     }
-    StudentGroup(int ID,int course, String name, String codeOfGroup){
+    public StudentGroup(int ID,int course, String name, String codeOfGroup){
         this.ID = ID;
         this.course = course;
         this.name = name;

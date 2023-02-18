@@ -1,14 +1,16 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.io.File;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class PracticalTask {
     private int ID;
     private String information;
     private File task;
-    PracticalTask(){this.information = "Null";}
-    PracticalTask(int ID,String URI, String information){
+    public PracticalTask(){this.information = "Null";}
+    public PracticalTask(int ID,String URI, String information){
         this.ID = ID;
         this.task = new File(URI);
         this.information = information;

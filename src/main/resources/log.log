@@ -6,3 +6,1081 @@
 2023-02-15 16:36:29,632 INFO r.s.M.Discipline [main] Home work 'Lab1' ofNull Null  Null was found
 2023-02-15 16:36:36,556 INFO r.s.M.Discipline [main] Home work 'Lab1' of Null Null  Null wasn't found
 2023-02-15 16:37:04,358 INFO r.s.M.Discipline [main] Home work 'Lab1' of Null Null  Null wasn't found
+2023-02-16 20:39:01,157 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:39:01,345 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-16 20:39:01,348 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:40:38,748 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:40:38,867 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-16 20:40:38,870 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:40:38,888 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:40:38,889 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:40:38,899 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:41:28,928 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:41:29,045 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:41:29,048 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:41:29,064 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:41:29,065 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:41:29,071 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:43:49,407 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:43:49,524 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:43:49,526 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:43:49,542 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:43:49,545 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:43:49,552 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:43:49,553 ERROR r.s.s.XMLDataProvider [main] Educational material record already exists
+2023-02-16 20:46:37,356 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:46:37,469 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:46:37,472 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:46:37,488 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:46:37,489 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:46:37,496 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:46:37,498 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:46:37,505 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-16 20:46:37,508 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:46:37,514 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:46:37,515 ERROR r.s.s.XMLDataProvider [main] Educational material wasn't found ID:3
+2023-02-16 20:47:27,461 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:47:27,575 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:47:27,578 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:47:27,594 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:47:27,595 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:47:27,602 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:47:27,603 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:47:27,609 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-16 20:47:27,612 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:47:27,618 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:47:27,620 ERROR r.s.s.XMLDataProvider [main] Educational material wasn't found ID:3
+2023-02-16 20:48:16,817 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:48:16,943 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:48:16,946 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:48:16,963 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:48:16,963 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:48:16,971 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:48:16,972 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:48:16,979 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-16 20:48:16,982 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:48:16,989 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:48:16,990 ERROR r.s.s.XMLDataProvider [main] Educational material wasn't found ID:3
+2023-02-16 20:50:40,929 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:50:41,050 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:50:41,052 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:50:41,068 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-16 20:51:07,818 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:51:07,938 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:51:07,941 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:51:07,957 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:51:07,957 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:51:07,965 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:51:11,138 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:51:11,250 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:51:11,252 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:51:11,267 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-16 20:51:42,646 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:51:42,770 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:51:42,771 ERROR r.s.s.XMLDataProvider [main] Educational material record wasn't found
+2023-02-16 20:51:56,224 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:51:56,332 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:51:56,333 ERROR r.s.s.XMLDataProvider [main] Educational material record wasn't found
+2023-02-16 20:52:20,306 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:52:20,419 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:52:20,421 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:52:20,438 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-16 20:52:20,438 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:52:20,445 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:52:55,653 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:52:55,777 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:52:55,778 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-16 20:52:55,795 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-16 20:52:55,798 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:52:55,805 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 20:52:55,805 ERROR r.s.s.XMLDataProvider [main] Educational material record wasn't found
+2023-02-16 20:58:26,061 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 20:58:26,183 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:00:41,718 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:00:41,838 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:00:41,840 INFO r.s.s.XMLDataProvider [main] Educational material record was found
+2023-02-16 21:00:41,841 ERROR r.s.s.XMLDataProvider [main] Educational material wasn't found ID:0
+2023-02-16 21:01:17,817 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:01:17,945 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:01:17,946 INFO r.s.s.XMLDataProvider [main] Educational material record was found
+2023-02-16 21:01:17,947 ERROR r.s.s.XMLDataProvider [main] Educational material wasn't found ID:0
+2023-02-16 21:24:56,126 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:24:56,262 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-16 21:24:56,264 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:25:16,535 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:25:16,681 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-16 21:25:16,683 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:25:16,705 INFO r.s.s.XMLDataProvider [main] Exam record was saved
+2023-02-16 21:25:16,706 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:25:16,721 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:25:16,722 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-16 21:25:56,052 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:25:56,175 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:25:56,176 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:25:56,199 INFO r.s.s.XMLDataProvider [main] Exam record was saved
+2023-02-16 21:25:56,199 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:25:56,210 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:25:56,210 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-16 21:27:12,043 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:27:12,198 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:27:12,200 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:27:12,217 INFO r.s.s.XMLDataProvider [main] Exam record was saved
+2023-02-16 21:27:12,221 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:27:12,229 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:27:12,230 ERROR r.s.s.XMLDataProvider [main] Exam record already exists
+2023-02-16 21:28:47,001 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:28:47,143 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:28:47,145 ERROR r.s.s.XMLDataProvider [main] Exam record already exists
+2023-02-16 21:29:46,264 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:29:46,389 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:29:46,390 ERROR r.s.s.XMLDataProvider [main] Exam record already exists
+2023-02-16 21:30:13,901 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:30:14,032 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:30:14,034 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:30:14,051 INFO r.s.s.XMLDataProvider [main] Exam record was saved
+2023-02-16 21:30:14,051 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:30:14,061 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:30:14,062 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:30:14,069 INFO r.s.s.XMLDataProvider [main] Exam record was saved
+2023-02-16 21:30:14,072 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:30:14,080 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:30:14,081 ERROR r.s.s.XMLDataProvider [main] Exam record wasn't found ID:3
+2023-02-16 21:31:07,989 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:31:08,133 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:31:08,135 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Exam.xml with new record
+2023-02-16 21:31:08,151 INFO r.s.s.XMLDataProvider [main] Exam record was saved
+2023-02-16 21:31:08,153 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:31:08,162 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:31:08,164 ERROR r.s.s.XMLDataProvider [main] Exam record wasn't found ID:
+2023-02-16 21:31:47,308 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:31:47,449 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:31:47,450 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-16 21:33:18,227 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-16 21:33:18,349 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-16 21:33:18,350 ERROR r.s.s.XMLDataProvider [main] Exam record wasn't found ID:0
+2023-02-17 18:01:27,597 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:01:27,756 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:01:27,758 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:01:27,783 INFO r.s.s.XMLDataProvider [main] Lection record was saved
+2023-02-17 18:01:27,784 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:01:27,795 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:01:27,796 INFO r.s.s.XMLDataProvider [main] Lection record was found
+2023-02-17 18:03:16,053 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:03:16,231 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:03:16,232 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:03:16,263 INFO r.s.s.XMLDataProvider [main] Lection record was saved
+2023-02-17 18:03:16,268 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:03:16,281 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:03:16,282 ERROR r.s.s.XMLDataProvider [main] Lection record already exists
+2023-02-17 18:03:40,655 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:03:40,838 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:03:40,840 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:03:40,871 INFO r.s.s.XMLDataProvider [main] Lection record was saved
+2023-02-17 18:03:40,875 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:03:40,889 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:03:40,890 ERROR r.s.s.XMLDataProvider [main] Lection record already exists
+2023-02-17 18:05:20,456 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:05:20,631 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:05:20,634 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:05:20,658 INFO r.s.s.XMLDataProvider [main] Lection record was saved
+2023-02-17 18:05:20,659 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:05:20,673 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:05:20,675 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:05:20,685 INFO r.s.s.XMLDataProvider [main] Lection record was deleted
+2023-02-17 18:05:20,689 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:05:20,699 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:05:20,701 ERROR r.s.s.XMLDataProvider [main] Lection record wasn't found ID:3
+2023-02-17 18:08:05,075 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:08:05,316 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:08:05,319 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:08:05,350 INFO r.s.s.XMLDataProvider [main] Lection record was deleted
+2023-02-17 18:08:05,355 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:08:05,370 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:08:05,371 ERROR r.s.s.XMLDataProvider [main] Lection record wasn't found
+2023-02-17 18:08:57,396 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:08:57,576 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:08:57,578 INFO r.s.s.XMLDataProvider [main] Lection record was found
+2023-02-17 18:10:37,290 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:10:37,460 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:10:37,462 ERROR r.s.s.XMLDataProvider [main] Lection record wasn't found ID:0
+2023-02-17 18:30:39,494 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:30:39,663 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:31:28,428 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:31:28,618 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:32:01,251 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:32:01,426 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:32:01,429 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:32:01,456 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:32:01,457 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:32:01,467 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:32:01,468 ERROR r.s.s.XMLDataProvider [main] Lesson record wasn't found ID:1
+2023-02-17 18:32:42,903 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:32:43,119 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:32:43,121 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:32:43,149 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:32:43,150 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:32:43,161 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:32:43,162 ERROR r.s.s.XMLDataProvider [main] Lesson record wasn't found ID:1
+2023-02-17 18:33:02,604 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:33:02,795 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:33:02,797 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lection.xml with new record
+2023-02-17 18:33:02,822 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:33:02,823 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:33:02,833 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:33:02,834 ERROR r.s.s.XMLDataProvider [main] Lesson record wasn't found ID:1
+2023-02-17 18:33:40,858 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:33:41,037 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 18:33:41,040 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:33:41,069 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:33:41,069 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:33:41,091 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:33:41,093 INFO r.s.s.XMLDataProvider [main] Lesson record was found
+2023-02-17 18:34:52,643 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:34:52,876 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:34:52,878 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:34:52,903 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:34:52,907 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:34:52,922 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:34:52,922 ERROR r.s.s.XMLDataProvider [main] Lesson record already exist
+2023-02-17 18:35:19,046 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:35:19,223 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:35:19,225 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:35:19,250 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:35:19,255 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:35:19,269 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:35:19,269 ERROR r.s.s.XMLDataProvider [main] Lesson record already exists
+2023-02-17 18:36:59,406 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:36:59,589 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:36:59,591 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:36:59,616 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:36:59,617 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:36:59,630 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:36:59,631 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:36:59,642 INFO r.s.s.XMLDataProvider [main] Lesson record wasn't found
+2023-02-17 18:36:59,646 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:36:59,664 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:36:59,665 ERROR r.s.s.XMLDataProvider [main] Logger record wasn't found ID:3
+2023-02-17 18:37:24,086 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:37:24,300 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:37:24,309 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:37:24,350 INFO r.s.s.XMLDataProvider [main] Lesson record was saved
+2023-02-17 18:37:24,351 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:37:24,369 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:37:24,370 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:37:24,384 INFO r.s.s.XMLDataProvider [main] Lesson record wasn't found
+2023-02-17 18:37:24,388 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:37:24,403 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:37:24,404 ERROR r.s.s.XMLDataProvider [main] Lesson record wasn't found ID:3
+2023-02-17 18:38:55,667 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:38:55,844 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:38:55,846 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Lesson.xml with new record
+2023-02-17 18:38:55,871 INFO r.s.s.XMLDataProvider [main] Lesson record wasn't found
+2023-02-17 18:38:55,875 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:38:55,888 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:38:55,889 ERROR r.s.s.XMLDataProvider [main] Lesson record wasn't found ID:1
+2023-02-17 18:39:38,745 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:39:38,929 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:39:38,931 INFO r.s.s.XMLDataProvider [main] Lesson record was found
+2023-02-17 18:40:36,704 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 18:40:36,875 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 18:40:36,877 ERROR r.s.s.XMLDataProvider [main] Lesson record wasn't found ID:0
+2023-02-17 19:01:51,711 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:01:51,844 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 19:01:51,846 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/MarkBook.xml with new record
+2023-02-17 19:02:39,111 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:02:39,260 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 19:02:39,262 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/MarkBook.xml with new record
+2023-02-17 19:02:39,286 INFO r.s.s.XMLDataProvider [main] Markbook record was saved
+2023-02-17 19:02:39,287 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:02:39,302 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:02:39,303 INFO r.s.s.XMLDataProvider [main] Markbook record was found
+2023-02-17 19:03:39,143 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:03:39,271 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:03:39,273 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/MarkBook.xml with new record
+2023-02-17 19:03:39,294 INFO r.s.s.XMLDataProvider [main] Markbook record was saved
+2023-02-17 19:03:39,297 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:03:39,308 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:03:39,309 INFO r.s.s.XMLDataProvider [main] Markbook record already exists
+2023-02-17 19:05:06,959 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:05:07,086 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:05:07,088 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/MarkBook.xml with new record
+2023-02-17 19:05:07,109 INFO r.s.s.XMLDataProvider [main] Markbook record was saved
+2023-02-17 19:05:07,109 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:05:07,122 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:05:07,124 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/MarkBook.xml with new record
+2023-02-17 19:05:07,134 INFO r.s.s.XMLDataProvider [main] Markbook record was deleted
+2023-02-17 19:05:07,138 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:05:07,150 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:05:07,151 ERROR r.s.s.XMLDataProvider [main] Markbook record wasn't found ID:3
+2023-02-17 19:06:45,495 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:06:45,628 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:06:45,629 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/MarkBook.xml with new record
+2023-02-17 19:06:45,649 INFO r.s.s.XMLDataProvider [main] Markbook record was deleted
+2023-02-17 19:06:45,652 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:06:45,662 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:06:45,663 ERROR r.s.s.XMLDataProvider [main] Markbook record wasn't found ID:1
+2023-02-17 19:07:59,026 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:07:59,157 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:07:59,158 INFO r.s.s.XMLDataProvider [main] Markbook record was found
+2023-02-17 19:09:21,171 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:09:21,303 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:09:21,305 ERROR r.s.s.XMLDataProvider [main] Markbook record wasn't found ID:0
+2023-02-17 19:47:29,767 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:47:29,946 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 19:47:29,947 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:47:29,970 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:47:29,971 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:47:29,982 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:47:29,982 INFO r.s.s.XMLDataProvider [main] Practical task record was found
+2023-02-17 19:49:13,326 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:49:13,470 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:49:13,472 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:49:13,501 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:49:13,505 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:49:13,517 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:49:13,517 ERROR r.s.s.XMLDataProvider [main] Practical task record already exists
+2023-02-17 19:49:35,897 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:49:36,045 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:49:36,047 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:49:36,074 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:49:36,078 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:49:36,090 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:49:36,091 ERROR r.s.s.XMLDataProvider [main] Practical task record already exists
+2023-02-17 19:51:26,986 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:51:27,151 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:51:27,152 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:51:27,174 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:51:27,174 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:51:27,184 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:53:32,366 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:53:32,511 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:55:12,102 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:55:12,222 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:55:12,223 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:55:12,247 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:55:12,248 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:55:12,257 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:55:12,259 INFO r.s.s.XMLDataProvider [main] Practical task record was found
+2023-02-17 19:55:16,001 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:55:16,181 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:55:16,183 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:55:16,206 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:55:16,210 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:55:16,220 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:55:16,221 ERROR r.s.s.XMLDataProvider [main] Practical task record already exists
+2023-02-17 19:55:20,703 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:55:20,839 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:55:20,841 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:55:20,866 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:55:20,866 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:55:20,879 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:01,254 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:01,407 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:01,408 ERROR r.s.s.XMLDataProvider [main] Practical task record already exists
+2023-02-17 19:56:18,913 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:19,078 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:19,080 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:56:19,103 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:56:19,103 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:19,112 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:19,113 INFO r.s.s.XMLDataProvider [main] Practical task record was found
+2023-02-17 19:56:30,635 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:30,783 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:30,784 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:56:30,804 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:56:30,807 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:30,817 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:30,817 ERROR r.s.s.XMLDataProvider [main] Practical task record already exists
+2023-02-17 19:56:34,784 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:34,947 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:34,948 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:56:34,969 INFO r.s.s.XMLDataProvider [main] Practical task record was saved
+2023-02-17 19:56:34,969 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:34,980 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:34,981 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:56:34,989 INFO r.s.s.XMLDataProvider [main] Practical task record was deleted
+2023-02-17 19:56:34,991 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:35,000 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:35,001 ERROR r.s.s.XMLDataProvider [main] Practical task record wasn't found ID:3
+2023-02-17 19:56:38,306 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:38,444 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:38,446 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/PracticalTask.xml with new record
+2023-02-17 19:56:38,467 INFO r.s.s.XMLDataProvider [main] Practical task record was deleted
+2023-02-17 19:56:38,469 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:56:38,480 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:56:38,481 ERROR r.s.s.XMLDataProvider [main] Practical task record wasn't found ID:1
+2023-02-17 19:57:22,036 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:57:22,214 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:57:22,215 INFO r.s.s.XMLDataProvider [main] Practical task record was found
+2023-02-17 19:58:39,324 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 19:58:39,471 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 19:58:39,473 ERROR r.s.s.XMLDataProvider [main] Practical task record wasn't found ID:0
+2023-02-17 20:14:16,473 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:14:16,634 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 20:14:16,636 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:14:16,659 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:14:16,659 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:14:16,672 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:14:16,673 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:15:47,151 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:15:47,285 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:15:47,287 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:15:47,306 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:15:47,309 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:15:47,320 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:15:47,320 ERROR r.s.s.XMLDataProvider [main] Exam schedule record already exists
+2023-02-17 20:17:30,495 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:17:30,646 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:17:30,647 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:17:30,666 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:17:30,669 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:17:30,681 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:17:30,682 ERROR r.s.s.XMLDataProvider [main] Exam schedule record already exists
+2023-02-17 20:18:55,295 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:18:55,477 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:18:55,479 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:18:55,506 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:18:55,507 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:18:55,523 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:18:55,525 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:18:55,535 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:18:55,538 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:18:55,551 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:18:55,552 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:19:32,505 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:19:32,641 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:19:32,642 ERROR r.s.s.XMLDataProvider [main] Exam schedule record already exists
+2023-02-17 20:20:26,902 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:20:27,055 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:20:27,056 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:20:27,076 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:20:27,077 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:20:27,089 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:20:27,090 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:20:27,099 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:20:27,101 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:20:27,111 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:20:27,112 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:20:55,726 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:20:55,896 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:20:55,898 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:20:55,921 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:20:55,921 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:20:55,934 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:20:55,935 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:24:12,454 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:24:12,591 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:24:12,592 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:24:12,617 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:24:12,621 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:24:12,635 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:24:12,636 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:24:12,648 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:27:00,279 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:00,426 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 20:27:00,428 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:27:00,451 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:27:00,452 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:00,466 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:00,467 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:27:08,661 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:08,796 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:08,798 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:27:08,819 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:27:08,822 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:08,836 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:08,836 ERROR r.s.s.XMLDataProvider [main] Exam schedule record already exists
+2023-02-17 20:27:12,608 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:12,753 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:12,755 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:27:12,780 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:27:12,780 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:12,797 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:12,798 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:27:12,809 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:27:12,812 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:12,823 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:12,824 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:3
+2023-02-17 20:27:17,041 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:17,298 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:17,300 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:27:17,333 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:27:17,336 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:17,352 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:17,353 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:1
+2023-02-17 20:27:59,449 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:27:59,587 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:27:59,589 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:1
+2023-02-17 20:28:07,051 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:28:07,186 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:28:07,187 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:28:07,210 INFO r.s.s.XMLDataProvider [main] Exam schedule record was saved
+2023-02-17 20:28:07,211 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:28:07,224 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:28:07,225 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:28:11,335 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:28:11,487 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:28:11,489 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfExams.xml with new record
+2023-02-17 20:28:11,514 INFO r.s.s.XMLDataProvider [main] Exam schedule record was deleted
+2023-02-17 20:28:11,517 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:28:11,532 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:28:11,533 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:1
+2023-02-17 20:28:51,849 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:28:51,990 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:28:51,991 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 20:30:49,041 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:30:49,175 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:30:49,176 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:0
+2023-02-17 20:47:57,102 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:47:57,247 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-17 20:47:57,249 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:47:57,273 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:47:57,274 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:47:57,293 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:47:57,294 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:1
+2023-02-17 20:48:16,534 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:48:16,682 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:48:26,836 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:48:26,991 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:48:26,993 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:48:27,023 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:48:27,023 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:48:27,037 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:48:27,038 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:1
+2023-02-17 20:50:45,606 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:50:45,759 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:50:45,760 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record already exists
+2023-02-17 20:50:57,291 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:50:57,441 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:50:57,442 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:50:57,466 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:50:57,467 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:50:57,480 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:50:57,481 ERROR r.s.s.XMLDataProvider [main] Exam schedule record wasn't found ID:1
+2023-02-17 20:51:59,222 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:51:59,388 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:51:59,390 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:51:59,427 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:51:59,428 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:51:59,449 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:51:59,450 INFO r.s.s.XMLDataProvider [main] true
+2023-02-17 20:51:59,450 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was found
+2023-02-17 20:53:54,995 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:53:55,254 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:53:55,256 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:53:55,281 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:53:55,283 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:53:55,301 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:53:55,302 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record already exists
+2023-02-17 20:54:30,094 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:54:30,225 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:54:30,226 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:54:30,248 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:54:30,251 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:54:30,263 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:54:30,264 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record already exists
+2023-02-17 20:56:23,292 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:56:23,433 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:56:23,434 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:56:23,459 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:56:23,459 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:56:23,476 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:56:23,477 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:56:23,486 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was deleted
+2023-02-17 20:56:23,489 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:56:23,504 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:56:23,505 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record wasn't found ID:3
+2023-02-17 20:56:50,775 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:56:50,931 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:56:50,933 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:56:50,956 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was saved
+2023-02-17 20:56:50,956 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:56:50,973 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:56:50,975 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:56:50,987 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was deleted
+2023-02-17 20:56:50,990 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:56:51,002 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:56:51,003 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record wasn't found ID:3
+2023-02-17 20:58:05,078 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:58:05,241 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:58:05,242 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfLessons.xml with new record
+2023-02-17 20:58:05,263 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was deleted
+2023-02-17 20:58:05,267 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:58:05,278 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:58:05,279 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record wasn't found ID:1
+2023-02-17 20:58:48,207 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 20:58:48,373 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 20:58:48,374 INFO r.s.s.XMLDataProvider [main] Exam record was found
+2023-02-17 21:00:29,303 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 21:00:29,455 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 21:00:29,456 INFO r.s.s.XMLDataProvider [main] Lesson schedule record was found
+2023-02-17 21:00:33,043 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-17 21:00:33,187 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-17 21:00:33,188 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record wasn't found ID:0
+2023-02-18 12:07:44,572 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:07:44,707 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 12:07:44,709 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:07:44,732 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:07:44,732 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:07:44,743 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:09:22,239 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:09:22,376 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:11:51,456 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:11:51,597 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:16:27,233 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:16:27,361 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:16:41,372 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:16:41,500 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:16:41,501 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:16:41,524 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:16:41,525 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:16:41,541 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:16:41,542 INFO r.s.s.XMLDataProvider [main] University event record was found
+2023-02-18 12:17:52,440 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:17:52,767 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:17:52,769 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:17:52,808 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:17:52,812 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:17:52,832 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:17:52,833 ERROR r.s.s.XMLDataProvider [main] University event schedule record already exists
+2023-02-18 12:19:42,500 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:19:42,643 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:19:42,645 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:19:42,665 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:19:42,665 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:19:42,678 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:19:42,679 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:19:42,688 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:19:42,691 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:19:42,701 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:19:42,702 ERROR r.s.s.XMLDataProvider [main] Lesson schedule record wasn't found ID:3
+2023-02-18 12:20:11,779 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:20:11,928 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:20:11,929 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:20:11,949 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:20:11,949 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:20:11,961 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:20:11,962 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:20:11,970 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:20:11,973 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:20:11,983 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:20:11,984 ERROR r.s.s.XMLDataProvider [main] University event schedule wasn't found ID:3
+2023-02-18 12:21:30,516 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:21:30,642 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:21:30,643 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:21:30,663 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:21:30,664 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:21:30,677 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:21:30,678 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:21:30,687 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:21:30,690 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:21:30,700 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:21:30,701 ERROR r.s.s.XMLDataProvider [main] University event schedule record wasn't found ID:3
+2023-02-18 12:22:41,363 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:22:41,503 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:22:41,504 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/ScheduleOfUNiversityEvents.xml with new record
+2023-02-18 12:22:41,531 INFO r.s.s.XMLDataProvider [main] University event schedule record was added
+2023-02-18 12:22:41,534 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:22:41,550 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:22:41,551 ERROR r.s.s.XMLDataProvider [main] University event schedule record wasn't found ID:1
+2023-02-18 12:23:32,219 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:23:32,396 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:23:32,398 INFO r.s.s.XMLDataProvider [main] University event record was found
+2023-02-18 12:24:38,527 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:24:38,662 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:24:38,663 ERROR r.s.s.XMLDataProvider [main] University event schedule record wasn't found ID:0
+2023-02-18 12:40:18,237 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:40:18,387 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 12:41:01,892 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:41:02,023 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 12:42:16,039 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:42:16,175 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 12:42:50,819 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:42:50,963 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 12:42:50,964 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Student.xml with new record
+2023-02-18 12:42:50,989 INFO r.s.s.XMLDataProvider [main] Student record was saved
+2023-02-18 12:42:50,990 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:42:51,002 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:42:51,003 INFO r.s.s.XMLDataProvider [main] Student record was found
+2023-02-18 12:44:42,104 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:44:42,265 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:44:42,267 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Student.xml with new record
+2023-02-18 12:44:42,301 INFO r.s.s.XMLDataProvider [main] Student record was saved
+2023-02-18 12:44:42,305 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:44:42,324 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:44:42,325 ERROR r.s.s.XMLDataProvider [main] Student record already exists
+2023-02-18 12:45:51,292 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:45:51,427 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:45:51,428 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Student.xml with new record
+2023-02-18 12:45:51,451 INFO r.s.s.XMLDataProvider [main] Student record was saved
+2023-02-18 12:45:51,451 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:45:51,463 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:45:51,464 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Student.xml with new record
+2023-02-18 12:45:51,474 INFO r.s.s.XMLDataProvider [main] Student record was deleted
+2023-02-18 12:45:51,477 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:45:51,487 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:45:51,489 ERROR r.s.s.XMLDataProvider [main] Student record wasn't found ID:3
+2023-02-18 12:47:02,825 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:47:02,968 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:47:02,970 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Student.xml with new record
+2023-02-18 12:47:02,990 INFO r.s.s.XMLDataProvider [main] Student record was deleted
+2023-02-18 12:47:02,993 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:47:03,004 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:47:03,004 ERROR r.s.s.XMLDataProvider [main] Student record wasn't found ID:1
+2023-02-18 12:47:35,687 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:47:35,837 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:47:35,839 INFO r.s.s.XMLDataProvider [main] Student record was found
+2023-02-18 12:48:44,042 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 12:48:44,178 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 12:48:44,179 ERROR r.s.s.XMLDataProvider [main] Student record wasn't found ID:0
+2023-02-18 13:03:08,780 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:03:08,954 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 13:03:08,956 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/StudentGroup.xml with new record
+2023-02-18 13:03:08,994 INFO r.s.s.XMLDataProvider [main] Student group record was saved
+2023-02-18 13:03:08,994 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:03:09,014 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:03:09,015 INFO r.s.s.XMLDataProvider [main] Student group record was found
+2023-02-18 13:04:21,185 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:04:21,361 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:04:21,363 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/StudentGroup.xml with new record
+2023-02-18 13:04:21,396 INFO r.s.s.XMLDataProvider [main] Student group record was saved
+2023-02-18 13:04:21,400 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:04:21,420 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:04:21,421 ERROR r.s.s.XMLDataProvider [main] Student record group already exists
+2023-02-18 13:05:12,817 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:05:12,964 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:05:12,965 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/StudentGroup.xml with new record
+2023-02-18 13:05:12,992 INFO r.s.s.XMLDataProvider [main] Student group record was saved
+2023-02-18 13:05:12,995 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:05:13,012 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:05:13,013 ERROR r.s.s.XMLDataProvider [main] Student record group already exists
+2023-02-18 13:06:22,320 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:06:22,472 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:06:22,474 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/StudentGroup.xml with new record
+2023-02-18 13:06:22,515 INFO r.s.s.XMLDataProvider [main] Student group record was saved
+2023-02-18 13:06:22,516 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:06:22,540 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:06:22,542 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/StudentGroup.xml with new record
+2023-02-18 13:06:22,562 INFO r.s.s.XMLDataProvider [main] Student group record was deleted
+2023-02-18 13:06:22,567 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:06:22,589 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:06:22,591 ERROR r.s.s.XMLDataProvider [main] Student group record wasn't found ID:3
+2023-02-18 13:07:45,227 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:07:45,416 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:07:45,418 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/StudentGroup.xml with new record
+2023-02-18 13:07:45,447 INFO r.s.s.XMLDataProvider [main] Student group record was deleted
+2023-02-18 13:07:45,451 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:07:45,468 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:07:45,468 ERROR r.s.s.XMLDataProvider [main] Student group record wasn't found ID:1
+2023-02-18 13:08:32,229 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:08:32,374 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:08:32,375 INFO r.s.s.XMLDataProvider [main] Student group record was found
+2023-02-18 13:09:59,999 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:10:00,139 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:10:00,140 ERROR r.s.s.XMLDataProvider [main] Student group record wasn't found ID:0
+2023-02-18 13:29:26,426 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:29:26,570 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 13:29:26,571 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Teacher.xml with new record
+2023-02-18 13:29:26,595 INFO r.s.s.XMLDataProvider [main] Teacher record was saved
+2023-02-18 13:29:26,596 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:29:26,608 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:29:26,609 INFO r.s.s.XMLDataProvider [main] Teacher record was found
+2023-02-18 13:31:08,892 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:31:09,058 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:31:09,059 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Teacher.xml with new record
+2023-02-18 13:31:09,089 INFO r.s.s.XMLDataProvider [main] Teacher record was saved
+2023-02-18 13:31:09,093 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:31:09,109 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:31:09,110 ERROR r.s.s.XMLDataProvider [main] Teacher record already exists
+2023-02-18 13:32:57,324 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:32:57,476 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:32:57,477 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Teacher.xml with new record
+2023-02-18 13:32:57,498 INFO r.s.s.XMLDataProvider [main] Teacher record was saved
+2023-02-18 13:32:57,499 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:32:57,514 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:32:57,515 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Teacher.xml with new record
+2023-02-18 13:32:57,527 INFO r.s.s.XMLDataProvider [main] Teacher record was deleted
+2023-02-18 13:32:57,530 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:32:57,543 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:32:57,544 ERROR r.s.s.XMLDataProvider [main] Teacher record wasn't found ID:3
+2023-02-18 13:34:20,494 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:34:20,628 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:34:20,630 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Teacher.xml with new record
+2023-02-18 13:34:20,653 INFO r.s.s.XMLDataProvider [main] Teacher record was deleted
+2023-02-18 13:34:20,656 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:34:20,667 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:34:20,668 ERROR r.s.s.XMLDataProvider [main] Teacher record wasn't found ID:1
+2023-02-18 13:35:04,517 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:35:04,641 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:35:04,642 INFO r.s.s.XMLDataProvider [main] Teacher record was found
+2023-02-18 13:36:29,145 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 13:36:29,287 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 13:36:29,288 ERROR r.s.s.XMLDataProvider [main] Teacher record wasn't found ID:0
+2023-02-18 16:17:56,818 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:17:57,047 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:17:57,050 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:18:26,241 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:18:26,470 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:18:26,472 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:18:26,516 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:18:26,517 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:18:26,547 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:18:26,548 INFO r.s.s.XMLDataProvider [main] Issue record was found
+2023-02-18 16:19:05,270 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:19:05,478 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:19:05,481 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:19:05,520 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:19:05,520 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:19:05,546 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:19:05,548 INFO r.s.s.XMLDataProvider [main] Issue record was found
+2023-02-18 16:20:15,473 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:20:15,734 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:20:15,736 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:20:15,771 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:20:15,775 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:20:15,795 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:20:15,796 ERROR r.s.s.XMLDataProvider [main] Issue record already exists
+2023-02-18 16:21:37,089 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:21:37,320 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:21:37,322 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:21:37,361 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:21:37,362 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:21:37,384 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:21:37,385 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:21:37,403 INFO r.s.s.XMLDataProvider [main] Issue record was deleted
+2023-02-18 16:21:37,408 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:21:37,428 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:21:37,429 ERROR r.s.s.XMLDataProvider [main] Issue record wasn't found ID:3
+2023-02-18 16:22:26,766 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:22:26,997 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:22:26,999 INFO r.s.s.XMLDataProvider [main] Issue record was found
+2023-02-18 16:24:09,879 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:24:10,098 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:24:10,100 ERROR r.s.s.XMLDataProvider [main] Issue record wasn't found ID:0
+2023-02-18 16:25:54,631 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:25:54,847 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:25:54,850 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:25:54,883 INFO r.s.s.XMLDataProvider [main] Issue record was deleted
+2023-02-18 16:25:54,887 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:25:54,905 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:25:54,906 ERROR r.s.s.XMLDataProvider [main] Issue record wasn't found ID:1
+2023-02-18 16:34:42,248 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:34:42,578 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:34:42,580 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:34:42,619 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:34:42,620 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:34:42,643 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:34:42,648 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:34:42,667 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-18 16:34:42,668 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:34:42,689 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:34:42,690 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:34:42,704 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:34:42,705 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:34:42,721 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:34:42,722 INFO r.s.s.XMLDataProvider [main] Discipline record wasn't found
+2023-02-18 16:36:14,176 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:36:14,388 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:36:14,389 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:36:14,431 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:36:14,431 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:36:14,452 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:36:14,456 ERROR r.s.s.XMLDataProvider [main] Educational material record already exists
+2023-02-18 16:38:21,537 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:38:21,736 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:38:21,738 ERROR r.s.s.XMLDataProvider [main] Discipline record already exists
+2023-02-18 16:38:31,613 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:38:31,818 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:38:31,820 ERROR r.s.s.XMLDataProvider [main] Discipline record already exists
+2023-02-18 16:38:55,491 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:38:55,710 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:38:55,712 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:38:55,757 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:38:55,758 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:38:55,781 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:38:55,784 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:38:55,803 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-18 16:38:55,804 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:38:55,829 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:38:55,830 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:38:55,850 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:38:55,851 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:38:55,871 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:38:55,872 INFO r.s.s.XMLDataProvider [main] Discipline record wasn't found
+2023-02-18 16:39:46,655 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:39:46,859 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:39:46,861 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:39:46,898 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:39:46,899 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:39:46,922 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:39:46,926 ERROR r.s.s.XMLDataProvider [main] Educational material record already exists
+2023-02-18 16:40:01,000 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:01,214 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:40:01,216 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:40:01,263 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:40:01,264 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:01,287 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:01,291 ERROR r.s.s.XMLDataProvider [main] Educational material record already exists
+2023-02-18 16:40:11,983 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:12,205 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:40:12,208 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:40:12,252 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:40:12,253 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:12,278 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:12,282 ERROR r.s.s.XMLDataProvider [main] Educational material record already exists
+2023-02-18 16:40:30,966 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:31,184 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:40:31,186 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:40:31,226 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:40:31,227 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:31,250 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:40:31,253 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:40:31,275 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-18 16:40:31,276 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:31,296 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-02-18 16:40:31,297 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:40:31,313 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:40:31,314 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:31,328 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:31,329 INFO r.s.s.XMLDataProvider [main] Discipline record wasn't found
+2023-02-18 16:40:35,859 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:36,098 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:36,100 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:40:36,134 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:40:36,134 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:36,154 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:36,156 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:40:36,176 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-18 16:40:36,177 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:36,197 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:36,198 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:40:36,213 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:40:36,217 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:40:36,232 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:40:36,232 ERROR r.s.s.XMLDataProvider [main] Discipline record already exists
+2023-02-18 16:42:35,747 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:35,966 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:35,967 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:42:36,005 INFO r.s.s.XMLDataProvider [main] Discipline record was saved
+2023-02-18 16:42:36,006 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:36,026 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:36,029 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:42:36,046 INFO r.s.s.XMLDataProvider [main] Educational material record was saved
+2023-02-18 16:42:36,047 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:36,067 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:36,069 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:42:36,083 INFO r.s.s.XMLDataProvider [main] Issue record was saved
+2023-02-18 16:42:36,084 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:36,099 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:36,100 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:42:36,115 INFO r.s.s.XMLDataProvider [main] Discipline record was deleted
+2023-02-18 16:42:36,115 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:36,130 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:36,131 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:42:36,142 INFO r.s.s.XMLDataProvider [main] Issue record was deleted
+2023-02-18 16:42:36,143 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:36,157 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:36,159 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:42:36,169 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-18 16:42:36,173 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:42:36,185 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:42:36,187 ERROR r.s.s.XMLDataProvider [main] Discipline record wasn't found ID:3
+2023-02-18 16:45:09,755 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:09,962 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:09,963 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Discipline.xml with new record
+2023-02-18 16:45:10,001 INFO r.s.s.XMLDataProvider [main] Discipline record was deleted
+2023-02-18 16:45:10,002 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:10,026 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:10,027 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/Issue.xml with new record
+2023-02-18 16:45:10,045 INFO r.s.s.XMLDataProvider [main] Issue record was deleted
+2023-02-18 16:45:10,046 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:10,063 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:10,064 DEBUG r.s.s.XMLDataProvider [main] Updating data source /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/xml/EducationalMaterial.xml with new record
+2023-02-18 16:45:10,077 INFO r.s.s.XMLDataProvider [main] Educational material record was deleted
+2023-02-18 16:45:10,081 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:10,096 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:10,097 ERROR r.s.s.XMLDataProvider [main] Discipline record wasn't found ID:1
+2023-02-18 16:45:48,494 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:48,836 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:48,838 INFO r.s.s.XMLDataProvider [main] Discipline record wasn't found
+2023-02-18 16:45:48,840 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:48,883 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:48,884 INFO r.s.s.XMLDataProvider [main] Educational material record was found
+2023-02-18 16:45:48,885 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:45:48,925 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:45:48,926 INFO r.s.s.XMLDataProvider [main] Issue record was found
+2023-02-18 16:46:48,565 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
+2023-02-18 16:46:48,783 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
+2023-02-18 16:46:48,784 ERROR r.s.s.XMLDataProvider [main] Discipline record wasn't found ID:0

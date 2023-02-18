@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapper>
+    <beans>
+        <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="issue">
+            <ID>2</ID>
+            <disciplineID>2</disciplineID>
+            <taskIssue>
+                <entry>
+                    <key>21.11.2020</key>
+                    <value/>
+                </entry>
+            </taskIssue>
+            <attendance>
+                <entry>
+                    <key>2023-02-18T16:40:35.830+03:00</key>
+                    <value/>
+                </entry>
+            </attendance>
+        </beans>
+    </beans>
+</wrapper>

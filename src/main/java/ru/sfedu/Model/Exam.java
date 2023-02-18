@@ -1,15 +1,21 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import java.util.Date;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Exam extends Event{
     private String nameOfDiscipline ;
     private String type;
     private String nameOfTeacher;
-    Exam(){
-        this.nameOfDiscipline = this.nameOfTeacher = this.type ="Null";
+    public Exam(){
+        this.nameOfDiscipline = this.nameOfTeacher = this.type = this.place = "Null";
     }
-    Exam(String nameOfDiscipline , String type , String nameOfTeacher){
+    public Exam(int ID, String place, Date time, String nameOfDiscipline , String type , String nameOfTeacher){
+        this.ID = ID;
+        this.place = place;
+        this.time = time;
         this.nameOfDiscipline = nameOfDiscipline;
         this.type = type;
         this.nameOfTeacher = nameOfTeacher;

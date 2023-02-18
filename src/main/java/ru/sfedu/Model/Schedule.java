@@ -1,10 +1,12 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Schedule {
-    private int ID;
-    private int semester;
+    protected int ID;
+    protected int semester;
     Schedule(){}
     Schedule(int ID, int semester){
         this.ID = ID;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapper>
+    <beans>
+        <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="studentGroup">
+            <ID>2</ID>
+            <course>1</course>
+            <name>Прикладная Информатика</name>
+            <codeOfGroup>12.03.05</codeOfGroup>
+            <groupComposition>
+                <ID>2</ID>
+                <name>Овчинникова Анна Владимировна</name>
+                <markBook>
+                    <ID>2</ID>
+                    <studentID>2</studentID>
+                    <totalMark>
+                        <entry>
+                            <key>Math</key>
+                            <value>15</value>
+                        </entry>
+                    </totalMark>
+                    <points>
+                        <entry>
+                            <key>Math</key>
+                            <value/>
+                        </entry>
+                    </points>
+                </markBook>
+            </groupComposition>
+        </beans>
+    </beans>
+</wrapper>

@@ -1,16 +1,18 @@
 package ru.sfedu.Model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.HashMap;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class MarkBook {
     private int ID;
     private int studentID;
     HashMap<String,Integer> totalMark = new HashMap<>();
     HashMap<String,HashMap<String,Integer>> points = new HashMap<>();
-    MarkBook(){
+    public MarkBook(){
     }
-    MarkBook(int ID, int studentID){
+    public MarkBook(int ID, int studentID){
         this.ID = ID;
         this.studentID = studentID;
     }

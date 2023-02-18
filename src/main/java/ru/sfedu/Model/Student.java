@@ -3,20 +3,29 @@ package ru.sfedu.Model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Student {
+    @XmlTransient
     private static final Logger log = LogManager.getLogger(Discipline.class);
     private int ID;
     private String name ;
     private MarkBook markBook = new MarkBook();
+    @XmlTransient
     private ScheduleOfLessons scheduleOfLessons = new ScheduleOfLessons();
+    @XmlTransient
+
     private ScheduleOfExams scheduleOfExams = new ScheduleOfExams();
+    @XmlTransient
+
     private ScheduleOfUniversityEvents scheduleOfUniversityEvents = new ScheduleOfUniversityEvents();
-    Student(){this.name = "Null Null  Null";}
-    Student(int ID, String name){
+    public Student(){this.name = "Null Null  Null";}
+    public Student(int ID, String name){
         this.ID = ID;
         this.name = name;
     }
