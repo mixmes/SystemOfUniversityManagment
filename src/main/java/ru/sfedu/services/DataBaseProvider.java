@@ -54,23 +54,91 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws IOException {
-        String sql = "INSERT INTO " + config.getConfigurationEntry(ED_MAT_DATA_TABLE)+" ()";
+    public void saveEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws Exception {
+        String sql = "INSERT INTO " + config.getConfigurationEntry(ED_MAT_DATA_TABLE)+" (id,disciplineId) VALUES(?,?)";
+        try( PreparedStatement preparedStatement = connection.prepareStatement(sql);){
+        preparedStatement.setInt(1,educationalMaterial.getID());
+        preparedStatement.setInt(2,educationalMaterial.getDisciplineID());
+        if(preparedStatement.executeUpdate() == 0){
+            log.error("Education material record can't be saved");
+        }
+        }
+        catch (SQLException e) {
+            throw new Exception("Education material record already exists");
+        }
+
+        educationalMaterial.getLections().stream().forEach(s-> {
+            try {
+                saveLectionRecord(s);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        educationalMaterial.getTasks().stream().forEach(s-> {
+            try {
+                savePracticalTaskRecord(s);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        log.info("Education material record was saved");
     }
 
     @Override
-    public EducationalMaterial getEducationalMaterialRecordByID(int id) {
-        return null;
+    public EducationalMaterial getEducationalMaterialRecordByID(int id) throws Exception {
+        EducationalMaterial edMat = new EducationalMaterial();
+        String sql = "SELECT * FROM "+ config.getConfigurationEntry(ED_MAT_DATA_TABLE)+ " WHERE id="+id;
+        Statement statement = connection.createStatement();
+        ResultSet resultSet=statement.executeQuery(sql);
+        if(resultSet.next()){
+            edMat.setID(resultSet.getInt("id"));
+            edMat.setDisciplineID(resultSet.getInt("disciplineId"));
+        }
+        else {
+            log.error("Education material record wasn't found");
+            throw new Exception("Education material record wasn't found");
+        }
+        edMat.setTasks(getPractTaskRecordByEdMatId(id));
+        edMat.setLections(getLectionRecordByEdMatId(id));
+        log.info("Education material record was obtained");
+        return  edMat;
     }
 
     @Override
-    public void deleteEducationalMaterialRecord(EducationalMaterial educationalMaterial) {
-
+    public void deleteEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws IOException {
+        deleteRecord(config.getConfigurationEntry(ED_MAT_DATA_TABLE),educationalMaterial.getID());
+        educationalMaterial.getLections().stream().forEach(s-> {
+            try {
+                deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE),s.getID());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        educationalMaterial.getTasks().stream().forEach(s-> {
+            try {
+                deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE),s.getID());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Override
     public void updateEducationalMaterialRecord(EducationalMaterial educationalMaterial) {
-
+        educationalMaterial.getTasks().stream().forEach(s-> {
+            try {
+                updatePracticalTaskRecord(s);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        educationalMaterial.getLections().stream().forEach(s-> {
+            try {
+                updateLectionRecord(s);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Override
@@ -137,10 +205,10 @@ public class DataBaseProvider implements DataProvider{
         }
         return  lection;
     }
-    public List<Lection> getLectionRecordByEdMatId(int id) throws Exception {
-        List<Lection> lections = new ArrayList<>();
+    public ArrayList<Lection> getLectionRecordByEdMatId(int id) throws Exception {
+        ArrayList<Lection> lections = new ArrayList<>();
         String sql = "SELECT * FROM "+config.getConfigurationEntry(LECTION_DATA_TABLE)+ " WHERE edMatId="+id;
-        Statement statement = connection.createStatement()
+        Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(sql);
         Lection lection = new Lection();
         while(resultSet.next()){
@@ -239,8 +307,8 @@ public class DataBaseProvider implements DataProvider{
 
         return practicalTask;
     }
-    public List<PracticalTask> getPractTaskRecordByEdMatId(int id) throws Exception {
-        List<PracticalTask> practicalTasks = new ArrayList<>();
+    public ArrayList<PracticalTask> getPractTaskRecordByEdMatId(int id) throws Exception {
+        ArrayList<PracticalTask> practicalTasks = new ArrayList<>();
         String sql = "SELECT * FROM " + config.getConfigurationEntry(PRACT_TASK_DATA_TABLE)+" WHERE edMatId="+id;
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(sql);

@@ -1440,3 +1440,46 @@
 2023-03-18 17:14:54,521 INFO r.s.s.DataBaseProvider [main] Pract task record was updated
 2023-03-18 17:14:54,540 INFO r.s.s.DataBaseProvider [main] Pract task record was obtained
 2023-03-18 17:14:54,553 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:45:17,450 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:45:17,461 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:46:08,354 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:08,365 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:08,375 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:13,993 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:46:14,003 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:46:14,024 INFO r.s.s.DataBaseProvider [main] Education material record was obtained
+2023-03-18 21:46:35,660 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:35,670 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:35,680 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:40,673 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:46:40,685 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:46:40,707 INFO r.s.s.DataBaseProvider [main] Education material record was obtained
+2023-03-18 21:46:40,719 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:40,727 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:40,734 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:47,002 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:46:47,013 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:46:47,035 INFO r.s.s.DataBaseProvider [main] Education material record was obtained
+2023-03-18 21:46:47,046 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:47,054 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:46:47,063 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:49:38,741 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:49:38,751 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:50:28,165 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:50:28,174 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:50:28,184 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:51:43,887 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:51:43,896 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:52:01,084 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:52:01,093 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:52:01,102 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:55:03,338 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:55:03,347 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:55:03,372 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:55:03,381 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:55:03,389 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:55:08,069 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 21:55:08,078 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-18 21:55:08,105 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:55:08,113 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 21:55:08,121 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted

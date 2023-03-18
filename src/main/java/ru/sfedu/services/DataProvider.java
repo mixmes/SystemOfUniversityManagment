@@ -11,9 +11,9 @@ public interface DataProvider {
     public Discipline getDiscicplineRecordById(int id) throws IOException;
     public void deleteDisciplineRecordById(Discipline discipline);
     public void updateDisciplineRecordById(Discipline discipline);
-    public void saveEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws IOException;
-    public EducationalMaterial getEducationalMaterialRecordByID(int id);
-    public void deleteEducationalMaterialRecord(EducationalMaterial educationalMaterial);
+    public void saveEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws Exception;
+    public EducationalMaterial getEducationalMaterialRecordByID(int id) throws Exception;
+    public void deleteEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws IOException;
     public void updateEducationalMaterialRecord(EducationalMaterial educationalMaterial);
     public void saveExamRecord(Exam exam);
     public void deleteExamRecord(Exam exam);
