@@ -1,10 +1,8 @@
 package ru.sfedu.Model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.Date;
 import java.util.Objects;
-@XmlAccessorType(XmlAccessType.FIELD)
+
 public class Lesson extends Event{
     private String nameOfDiscipline;
     private String type;
@@ -12,7 +10,7 @@ public class Lesson extends Event{
     public Lesson(){
         this.nameOfDiscipline = this.nameOfTeacher = this.type = "Null";
     }
-    public Lesson(int ID, String place, Date time, String nameOfDiscipline, String type , String nameOfTeacher){
+    public Lesson(int ID, String place, String time, String nameOfDiscipline, String type , String nameOfTeacher){
         this.ID = ID;
         this.place = place;
         this.time = time;

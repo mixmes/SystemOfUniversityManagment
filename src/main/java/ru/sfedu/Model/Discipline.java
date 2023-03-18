@@ -1,17 +1,12 @@
 package ru.sfedu.Model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlTransient;
 import java.util.Objects;
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Discipline {
     private int ID;
+    private int teacherID;
     private String name;
     private String typeOfMarking;
-    @XmlTransient
-    private Issue issue =  new Issue();
-    @XmlTransient
+
     private EducationalMaterial educationalMaterial = new EducationalMaterial();
     public Discipline(){
         this.name = "Null";
@@ -31,6 +26,14 @@ public class Discipline {
         this.ID = id;
     }
 
+    public int getTeacherID() {
+        return teacherID;
+    }
+
+    public void setTeacherID(int teacherID) {
+        this.teacherID = teacherID;
+    }
+
     public String getName() {
         return name;
     }
@@ -47,13 +50,6 @@ public class Discipline {
         this.typeOfMarking = typeOfMarking;
     }
 
-    public Issue getIssue() {
-        return issue;
-    }
-
-    public void setIssue(Issue issue) {
-        this.issue = issue;
-    }
 
     public EducationalMaterial getEducationalMaterial() {
         return educationalMaterial;

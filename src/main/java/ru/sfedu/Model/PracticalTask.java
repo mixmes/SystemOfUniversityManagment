@@ -1,16 +1,16 @@
 package ru.sfedu.Model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+
 import java.io.File;
 import java.util.Objects;
-@XmlAccessorType(XmlAccessType.FIELD)
 public class PracticalTask {
     private int ID;
+    private int educationMaterialID;
     private String information;
     private File task;
     public PracticalTask(){this.information = "Null";}
-    public PracticalTask(int ID,String URI, String information){
+    public PracticalTask(int ID,int educationMaterialID,String URI, String information){
+        this.educationMaterialID = educationMaterialID;
         this.ID = ID;
         this.task = new File(URI);
         this.information = information;
@@ -22,6 +22,14 @@ public class PracticalTask {
 
     public void setID(int ID) {
         this.ID = ID;
+    }
+
+    public int getEducationMaterialID() {
+        return educationMaterialID;
+    }
+
+    public void setEducationMaterialID(int educationMaterialID) {
+        this.educationMaterialID = educationMaterialID;
     }
 
     public File getTask() {

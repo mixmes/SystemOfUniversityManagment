@@ -1084,3 +1084,328 @@
 2023-02-18 16:46:48,565 DEBUG r.s.s.XMLDataProvider [main] Trying to deserialize objects ...
 2023-02-18 16:46:48,783 DEBUG r.s.s.XMLDataProvider [main] Records obtained[]
 2023-02-18 16:46:48,784 ERROR r.s.s.XMLDataProvider [main] Discipline record wasn't found ID:0
+2023-02-24 14:42:56,040 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/temp.csv
+2023-02-24 14:43:23,385 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/temp.csv
+2023-02-24 14:45:58,026 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 14:46:10,319 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 14:46:26,602 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 14:50:33,970 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 14:54:12,944 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 14:55:06,670 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 14:55:06,765 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3c1, ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 14:57:25,574 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:08:56,209 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/temp.csv
+2023-02-24 15:09:19,177 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/temp.csv
+2023-02-24 15:10:04,621 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/temp.csv
+2023-02-24 15:15:19,622 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:52:13,874 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:52:38,581 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:52:38,670 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:53:40,444 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:53:40,531 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:54:09,020 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:54:09,103 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:54:54,288 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:54:54,392 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:55:07,329 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:55:07,402 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:56:25,047 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:56:25,123 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:57:03,909 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:57:03,986 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:57:25,841 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:57:25,917 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:58:34,263 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:58:34,343 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 15:59:35,239 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 15:59:35,319 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 16:00:24,314 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 16:00:24,390 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 16:00:53,424 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 16:00:53,506 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 16:01:37,603 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 16:01:37,677 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-24 16:04:56,416 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-24 16:04:56,503 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.MarkBook@3e1]
+2023-02-27 18:14:30,252 DEBUG r.s.s.CSVDataProvider [main] Math:{Math1=1, math2=2}-
+2023-02-27 18:15:16,664 DEBUG r.s.s.CSVDataProvider [main] Math:{Math1=1, math2=2}-
+2023-02-27 18:20:30,574 DEBUG r.s.s.CSVDataProvider [main] Math1:1- math2:2-
+2023-02-27 18:20:48,689 DEBUG r.s.s.CSVDataProvider [main] Math1:1-math2:2-
+2023-02-28 20:07:46,224 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:07:46,231 ERROR r.s.s.CSVDataProvider [main] csv file is empty
+2023-02-28 20:07:46,233 INFO r.s.s.CSVDataProvider [main] update lessonCSV
+2023-02-28 20:07:46,319 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:08:30,591 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:10:09,196 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:11:10,052 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:11:39,982 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:11:39,987 DEBUG r.s.s.CSVDataProvider [main] lessonCSV
+2023-02-28 20:12:44,216 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:12:44,221 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:12:44,295 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:12:44,296 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:12:44,318 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:12:59,517 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:12:59,521 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:19:47,721 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:19:47,725 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:19:47,813 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@8936d525]
+2023-02-28 20:19:47,814 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:19:58,536 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:19:58,540 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:19:58,620 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@90651526]
+2023-02-28 20:19:58,622 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:19:58,636 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:20:13,463 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:20:13,467 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:20:13,539 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@90651526]
+2023-02-28 20:20:13,540 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:20:13,552 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:20:44,411 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:20:44,415 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:20:44,490 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:20:44,492 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:20:44,504 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:38:21,483 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:21,487 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:21,619 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@8936d525]
+2023-02-28 20:38:21,621 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:21,636 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:38:21,637 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:21,637 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:21,651 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@8936d525, ru.sfedu.Model.Lesson@8936d525, ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:38:21,652 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:38:27,305 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:27,309 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:27,387 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@8936d525, ru.sfedu.Model.Lesson@8936d525, ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:38:27,388 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:38:50,510 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:50,515 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:50,603 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:38:50,605 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:50,622 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:38:50,623 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:50,623 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:50,649 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:38:50,650 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:38:54,097 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:54,101 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:54,202 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:38:54,204 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:54,222 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:38:54,226 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:38:54,226 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:38:54,244 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:38:54,245 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:39:18,310 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:18,314 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:18,403 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:39:18,404 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:18,425 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:39:18,426 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:18,426 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:18,444 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39]
+2023-02-28 20:39:18,445 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:18,461 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:39:18,465 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:18,465 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:18,492 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:39:18,493 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:18,509 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:39:25,847 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:25,852 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:25,949 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:39:25,950 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:39:52,404 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:52,408 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:52,485 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:39:52,486 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:52,499 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:39:52,499 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:52,500 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:52,518 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:39:52,519 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:39:58,676 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:58,681 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:58,771 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:39:58,773 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:58,795 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:39:58,799 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:39:58,800 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:39:58,820 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:39:58,821 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:40:35,831 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:40:35,835 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:40:35,920 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:40:35,921 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:40:35,938 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:40:35,938 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:40:35,938 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:40:35,956 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39]
+2023-02-28 20:40:35,957 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:40:35,974 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:40:35,979 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:40:35,979 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:40:36,012 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:40:36,013 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:40:36,027 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:41:23,341 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:41:23,345 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:41:23,426 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:41:23,427 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:41:23,446 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:41:23,447 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:41:23,447 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:41:23,471 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:41:23,472 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:41:29,967 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:41:29,972 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:41:30,059 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:41:30,061 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:41:30,082 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:41:30,087 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:41:30,087 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:41:30,105 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:41:30,106 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:44:21,341 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:44:21,347 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:21,350 ERROR r.s.s.CSVDataProvider [main] csv file is empty
+2023-02-28 20:44:21,352 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:21,442 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:44:21,442 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:44:21,443 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:21,485 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:44:21,486 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:44:51,871 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:44:51,876 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:51,999 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:44:52,000 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:52,019 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:44:52,020 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:44:52,020 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:52,046 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:44:52,047 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:44:57,710 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:44:57,714 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:57,797 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:44:57,799 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:57,817 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:44:57,821 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:44:57,822 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:44:57,842 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:44:57,842 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:45:03,286 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:03,290 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:03,384 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:45:03,385 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:03,409 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:45:03,410 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:03,410 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:03,434 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39]
+2023-02-28 20:45:03,435 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:03,446 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:45:03,451 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:03,451 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:03,471 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:45:03,472 ERROR r.s.s.CSVDataProvider [main] Lesson record wasn't found (CSV)
+2023-02-28 20:45:40,069 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:40,075 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:40,175 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@90651526]
+2023-02-28 20:45:40,176 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:40,195 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:45:40,195 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:40,196 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:40,217 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@90651526, ru.sfedu.Model.Lesson@150feb39]
+2023-02-28 20:45:40,219 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:40,236 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:45:40,240 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:40,242 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:40,266 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@90651526]
+2023-02-28 20:45:40,267 ERROR r.s.s.CSVDataProvider [main] Lesson record wasn't found (CSV)
+2023-02-28 20:45:56,484 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:56,489 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:56,588 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@90651526]
+2023-02-28 20:45:56,590 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:56,609 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:45:56,610 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:56,610 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:56,631 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@90651526, ru.sfedu.Model.Lesson@150feb39]
+2023-02-28 20:45:56,632 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:56,646 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:45:56,649 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:45:56,649 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:45:56,667 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@90651526]
+2023-02-28 20:45:56,668 ERROR r.s.s.CSVDataProvider [main] Lesson record wasn't found (CSV)
+2023-02-28 20:46:24,574 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:24,578 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:24,671 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-02-28 20:46:24,672 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:24,690 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:46:24,691 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:24,692 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:24,716 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:46:24,718 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:46:29,187 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:29,191 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:29,278 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296]
+2023-02-28 20:46:29,280 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:29,299 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:46:29,303 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:29,304 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:29,326 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:29,326 ERROR r.s.s.CSVDataProvider [main] Lesson record already exists (CSV)
+2023-02-28 20:46:34,675 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:34,679 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:34,761 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:34,762 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:34,785 INFO r.s.s.CSVDataProvider [main] Lesson record was saved (CSV)
+2023-02-28 20:46:34,786 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:34,786 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:34,812 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19, ru.sfedu.Model.Lesson@150feb39]
+2023-02-28 20:46:34,813 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:34,832 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:46:34,837 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:34,837 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:34,863 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:34,863 ERROR r.s.s.CSVDataProvider [main] Lesson record wasn't found (CSV)
+2023-02-28 20:46:43,020 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:43,025 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:43,121 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@719ec296, ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:43,123 INFO r.s.s.CSVDataProvider [main] update /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:43,147 INFO r.s.s.CSVDataProvider [main] Lesson record was deleted (CSV)
+2023-02-28 20:46:43,152 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:43,153 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:43,176 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:43,177 ERROR r.s.s.CSVDataProvider [main] Lesson record wasn't found (CSV)
+2023-02-28 20:46:48,599 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:48,603 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:48,683 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:48,684 INFO r.s.s.CSVDataProvider [main] Lesson record was found (CSV)
+2023-02-28 20:46:55,633 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-02-28 20:46:55,637 DEBUG r.s.s.CSVDataProvider [main] /home/mihail/IdeaProjects/SystemOfUniversityManagment/src/main/java/ru/sfedu/csv/Lesson.csv
+2023-02-28 20:46:55,739 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.Model.Lesson@2009de19]
+2023-02-28 20:46:55,740 ERROR r.s.s.CSVDataProvider [main] Lesson record wasn't found (CSV)
+2023-03-18 14:47:19,479 INFO r.s.s.DataBaseProvider [main] save record
+2023-03-18 14:48:25,326 INFO r.s.s.DataBaseProvider [main] save record
+2023-03-18 15:33:37,989 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:33:38,013 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
+2023-03-18 15:43:08,741 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:43:20,738 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:43:20,760 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
+2023-03-18 15:43:20,776 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:49:04,502 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:49:49,028 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:49:54,731 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:50:33,758 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:50:40,295 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:50:40,325 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:50:45,453 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:50:45,479 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:55:36,170 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:55:36,190 INFO r.s.s.DataBaseProvider [main] Lection record was updated
+2023-03-18 15:55:36,210 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
+2023-03-18 15:55:36,225 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 15:55:42,742 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 15:55:42,758 INFO r.s.s.DataBaseProvider [main] Lection record was updated
+2023-03-18 15:55:42,774 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
+2023-03-18 15:55:42,785 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted

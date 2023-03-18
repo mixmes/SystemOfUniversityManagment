@@ -1,10 +1,8 @@
 package ru.sfedu.Model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.Objects;
-@XmlAccessorType(XmlAccessType.FIELD)
-public class Schedule {
+
+public class Schedule  {
     protected int ID;
     protected int semester;
     Schedule(){}
@@ -12,6 +10,8 @@ public class Schedule {
         this.ID = ID;
         this.semester = semester;
     }
+
+
 
     public int getID() {
         return ID;

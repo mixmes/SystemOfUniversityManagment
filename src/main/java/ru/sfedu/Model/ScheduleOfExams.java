@@ -1,10 +1,9 @@
 package ru.sfedu.Model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+
 import java.util.ArrayList;
 import java.util.Objects;
-@XmlAccessorType(XmlAccessType.FIELD)
+
 public class ScheduleOfExams extends Schedule {
     private ArrayList<Exam> exams = new ArrayList<>();
     public ScheduleOfExams(){}

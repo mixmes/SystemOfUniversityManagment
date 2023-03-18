@@ -1,19 +1,26 @@
 package ru.sfedu;
 
+import ru.sfedu.Model.Discipline;
+
+import java.util.Arrays;
+import java.util.List;
+
 public class Constants {
-    public static  String DISCIPLINE = "disciplineXML";
-    public static  String ED_MATERIAL = "educationalMaterialXML";
-    public static  String EXAM = "examXML";
-    public static  String ISSUE = "issueXML";
-    public static  String LECTION = "lectionXML";
-    public static  String LESSON = "lessonXML";
-    public static  String MARKBOOK = "markBookXML";
-    public static  String PRACT_TASK = "practicalTaskXML";
-    public static  String EXAM_SCHEDULE = "examScheduleXML";
-    public static  String LESSON_SCHEDULE = "lessonScheduleXML";
-    public static  String UNIVERSITY_EVENTS_SCHEDULE = "universityEventScheduleXML";
-    public static  String STUDENT = "studentXML";
-    public static  String STUDENT_GROUP = "studentGroupXML";
-    public static  String TEACHER = "teacherXML";
-    public static  String UNIVERSITY_EVENTS = "universityEventXML";
+    public static final String USER_DATA_BASE = "userDataBase";
+    public static final String URL_DATA_BASE = "urlDataBase";
+    public static final String PASS_DATA_BASE = "passDataBase";
+    public static final String DISCIPLINE_DATA_TABLE = "disciplineTable";
+    public static final String ED_MAT_DATA_TABLE = "edMatTable";
+    public static final String EXAM_DATA_TABLE= "examTable";
+    public static final String LECTION_DATA_TABLE = "lectionTable";
+    public static final String LESSON_DATA_TABLE = "lessonTable";
+    public static final String PRACT_TASK_DATA_TABLE = "practTaskTable";
+    public static final String EXAM_SCHEDULE_DATA_TABLE = "examScheduleTable";
+    public static final String LESSON_SCHEDULE_DATA_TABLE = "lessonScheduleTable";
+    public static final String UN_EVENTS_SCHEDULE_DATA_TABLE = "unEventsScheduleTable";
+    public static final String STUDENT_DATA_TABLE = "studentTable";
+    public static final String STUDENT_GROUP_DATA_TABLE = "studentGroupTable";
+    public static final String STUDENT_WORK_DATA_TABLE = "studentWorkTable";
+    public static final String TEACHER_DATA_TABLE = "teacherTable";
+    public static final String UN_EVENTS_DATA_TABLE = "unEventsTable";
 }

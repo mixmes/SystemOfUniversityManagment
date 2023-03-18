@@ -1,21 +1,28 @@
 package ru.sfedu.Model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.Date;
 import java.util.Objects;
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Event {
     protected int ID;
+    protected int scheduleID;
     protected String place;
-    protected Date time = new Date();
+    protected String time = new String();
     protected Event(){
         this.place = "Null";
     }
-    protected Event(int ID, String place , Date time ){
+    protected Event(int ID,int scheduleID, String place , String time ){
+        this.scheduleID = scheduleID;
         this.ID = ID;
         this.place = place;
         this.time = time;
+    }
+
+    public int getScheduleID() {
+        return scheduleID;
+    }
+
+    public void setScheduleID(int scheduleID) {
+        this.scheduleID = scheduleID;
     }
 
     public int getID() {
@@ -34,11 +41,11 @@ public class Event {
         this.place = place;
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
