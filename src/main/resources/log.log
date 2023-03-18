@@ -1409,3 +1409,34 @@
 2023-03-18 15:55:42,758 INFO r.s.s.DataBaseProvider [main] Lection record was updated
 2023-03-18 15:55:42,774 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
 2023-03-18 15:55:42,785 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 16:56:48,175 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 16:56:53,648 INFO r.s.s.DataBaseProvider [main] Pract task record was obtained
+2023-03-18 16:56:53,667 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:01:20,086 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:01:43,610 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:01:48,849 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:07:05,090 INFO r.s.s.DataBaseProvider [main] Pract task record was updated
+2023-03-18 17:07:05,113 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:07:12,537 INFO r.s.s.DataBaseProvider [main] Pract task record was updated
+2023-03-18 17:07:12,554 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:08:11,884 INFO r.s.s.DataBaseProvider [main] Pract task record was updated
+2023-03-18 17:08:11,903 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:09:01,782 INFO r.s.s.DataBaseProvider [main] Pract task record was updated
+2023-03-18 17:10:58,170 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:11:10,737 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 17:11:10,754 INFO r.s.s.DataBaseProvider [main] Lection record was updated
+2023-03-18 17:11:10,769 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
+2023-03-18 17:11:10,783 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:11:16,576 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:12:05,424 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:13:18,428 ERROR r.s.s.DataBaseProvider [main] Pract task record wasn't found
+2023-03-18 17:13:40,503 INFO r.s.s.DataBaseProvider [main] Lection record was saved
+2023-03-18 17:13:40,520 INFO r.s.s.DataBaseProvider [main] Lection record was obtained
+2023-03-18 17:13:40,534 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:14:43,439 INFO r.s.s.DataBaseProvider [main] Pract task record was obtained
+2023-03-18 17:14:43,454 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:14:47,797 INFO r.s.s.DataBaseProvider [main] Pract task record can't be saved
+2023-03-18 17:14:47,813 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted
+2023-03-18 17:14:54,521 INFO r.s.s.DataBaseProvider [main] Pract task record was updated
+2023-03-18 17:14:54,540 INFO r.s.s.DataBaseProvider [main] Pract task record was obtained
+2023-03-18 17:14:54,553 INFO r.s.s.DataBaseProvider [main] Record with ID:1 was deleted

@@ -169,23 +169,61 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void savePracticalTaskRecord(PracticalTask practicalTask) {
+    public void savePracticalTaskRecord(PracticalTask practicalTask) throws Exception {
+        String sql = "INSERT INTO "+config.getConfigurationEntry(PRACT_TASK_DATA_TABLE)+" (id,edMatId,information,url) VALUES(?,?,?,?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setInt(1,practicalTask.getID());
+            statement.setInt(2,practicalTask.getEducationMaterialID());
+            statement.setString(3,practicalTask.getInformation());
+            statement.setString(4,practicalTask.getTask().getAbsolutePath());
+            statement.executeUpdate();
 
+
+        } catch (SQLException e) {
+            log.info("Pract task record can't be saved");
+            throw new Exception("Pract task record already exists");
+        }
     }
 
     @Override
-    public void deletePracticalTaskRecord(PracticalTask practicalTask) {
-
+    public void deletePracticalTaskRecord(PracticalTask practicalTask) throws IOException {
+        deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE),practicalTask.getID());
     }
 
     @Override
-    public void updatePracticalTaskRecord(PracticalTask practicalTask) {
-
+    public void updatePracticalTaskRecord(PracticalTask practicalTask) throws IOException {
+        String sql = "UPDATE "+config.getConfigurationEntry(PRACT_TASK_DATA_TABLE)+" SET information = '"+practicalTask.getInformation()+"'," +
+                "url = '"+practicalTask.getTask().getAbsolutePath()+"' WHERE id = "+practicalTask.getID();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Pract task record was updated");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public PracticalTask getPracticalTaskRecordById(int id) {
-        return null;
+    public PracticalTask getPracticalTaskRecordById(int id) throws Exception {
+        PracticalTask practicalTask = new PracticalTask();
+        String sql = "SELECT * FROM " + config.getConfigurationEntry(PRACT_TASK_DATA_TABLE)+" WHERE id ="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                practicalTask.setID(resultSet.getInt("id"));
+                practicalTask.setEducationMaterialID(resultSet.getInt("edMatId"));
+                practicalTask.setInformation(resultSet.getString("information"));
+                practicalTask.setTask(new File(resultSet.getString("url")));
+                log.info("Pract task record was obtained");
+            }
+            else {
+                log.error("Pract task record wasn't found");
+                throw new Exception("Pract task record wasn't found");
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return practicalTask;
     }
 
     @Override

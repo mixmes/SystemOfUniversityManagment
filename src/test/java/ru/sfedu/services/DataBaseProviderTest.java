@@ -13,6 +13,7 @@ class DataBaseProviderTest {
     public static final ConfigurationUtil config = new ConfigurationUtil();
     public static final Discipline math = new Discipline(1,"Math","Exam");
     public static final Lection lection = new Lection(1,1,"/home/../","Lection 21/02/2012");
+    public static final PracticalTask practTask = new PracticalTask(1,1,"/home/...","Deadline 21.02.2012");
     public static DataBaseProvider db;
     static {
         try {
@@ -53,6 +54,36 @@ class DataBaseProviderTest {
 
         db.deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE), lection.getID());
         lection.setInformation("Lection 21/02/2012");
+    }
+    @Test
+    void testSavePractTaskRecord() throws Exception {
+        db.savePracticalTaskRecord(practTask);
+
+        assertEquals(practTask,db.getPracticalTaskRecordById(practTask.getID()));
+
+        db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE), practTask.getID());
+    }
+    @Test
+    void testSaveExistingPractTaskRecord() throws Exception {
+        db.savePracticalTaskRecord(practTask);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.savePracticalTaskRecord(practTask);
+        });
+        assertEquals("Pract task record already exists",exception.getMessage());
+
+        db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE), practTask.getID());
+    }
+    @Test
+    void testUpdatePractTaskRecord() throws Exception {
+        db.savePracticalTaskRecord(practTask);
+        practTask.setInformation("_");
+        db.updatePracticalTaskRecord(practTask);
+
+        assertEquals("_",db.getPracticalTaskRecordById(practTask.getID()).getInformation());
+
+        db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE),practTask.getID());
+        practTask.setInformation("Deadline 21.02.2012");
     }
 
 }

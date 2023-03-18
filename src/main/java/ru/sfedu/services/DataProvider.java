@@ -27,10 +27,10 @@ public interface DataProvider {
     public void deleteLessonRecord(Lesson lesson);
     public void updateLessonRecord(Lesson lesson);
     public Lesson getLessonRecordById(int id);
-    public void savePracticalTaskRecord(PracticalTask practicalTask);
-    public void deletePracticalTaskRecord(PracticalTask practicalTask);
-    public void updatePracticalTaskRecord(PracticalTask practicalTask);
-    public PracticalTask getPracticalTaskRecordById(int id);
+    public void savePracticalTaskRecord(PracticalTask practicalTask) throws Exception;
+    public void deletePracticalTaskRecord(PracticalTask practicalTask) throws IOException;
+    public void updatePracticalTaskRecord(PracticalTask practicalTask) throws IOException;
+    public PracticalTask getPracticalTaskRecordById(int id) throws Exception;
     public void saveScheduleRecord(Schedule schedule);
     public void deleteScheduleRecord(Schedule schedule);
     public void updateScheduleRecord(Schedule schedule);
