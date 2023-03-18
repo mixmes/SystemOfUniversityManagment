@@ -135,6 +135,25 @@ public class DataBaseProvider implements DataProvider{
         }
         return  lection;
     }
+    public Lection getLectionRecordByEdMatId(int id) throws Exception {
+        Lection lection = new Lection();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(LECTION_DATA_TABLE)+ " WHERE edMatId="+id;
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                lection.setID(resultSet.getInt("id"));
+                lection.setEducationMaterialID(resultSet.getInt("edMatId"));
+                lection.setInformation(resultSet.getString("information"));
+                lection.setLection(new File(resultSet.getString("url")));
+                log.info("Lection record was obtained");
+            }
+            else {
+                log.error("Lection record wasn't found");
+                throw new Exception("Lection record wasn't found");
+            }
+        }
+        return lection;
+    }
 
     @Override
     public void updateLectionRecord(Lection lection) throws Exception {
@@ -206,22 +225,37 @@ public class DataBaseProvider implements DataProvider{
     public PracticalTask getPracticalTaskRecordById(int id) throws Exception {
         PracticalTask practicalTask = new PracticalTask();
         String sql = "SELECT * FROM " + config.getConfigurationEntry(PRACT_TASK_DATA_TABLE)+" WHERE id ="+id;
-        try(PreparedStatement statement = connection.prepareStatement(sql)){
-            ResultSet resultSet = statement.executeQuery(sql);
-            if(resultSet.next()){
-                practicalTask.setID(resultSet.getInt("id"));
-                practicalTask.setEducationMaterialID(resultSet.getInt("edMatId"));
-                practicalTask.setInformation(resultSet.getString("information"));
-                practicalTask.setTask(new File(resultSet.getString("url")));
-                log.info("Pract task record was obtained");
-            }
-            else {
-                log.error("Pract task record wasn't found");
-                throw new Exception("Pract task record wasn't found");
-            }
+        PreparedStatement statement = connection.prepareStatement(sql);
+        ResultSet resultSet = statement.executeQuery(sql);
+        if(resultSet.next()){
+            practicalTask.setID(resultSet.getInt("id"));
+            practicalTask.setEducationMaterialID(resultSet.getInt("edMatId"));
+            practicalTask.setInformation(resultSet.getString("information"));
+            practicalTask.setTask(new File(resultSet.getString("url")));
+            log.info("Pract task record was obtained");
+        }
+        else {
+            log.error("Pract task record wasn't found");
+            throw new Exception("Pract task record wasn't found");
+        }
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        return practicalTask;
+    }
+    public PracticalTask getPractTaskRecordByEdMatId(int id) throws Exception {
+        PracticalTask practicalTask = new PracticalTask();
+        String sql = "SELECT * FROM " + config.getConfigurationEntry(PRACT_TASK_DATA_TABLE)+" WHERE edMatId="+id;
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery(sql);
+        if(resultSet.next()){
+            practicalTask.setID(resultSet.getInt("id"));
+            practicalTask.setEducationMaterialID(resultSet.getInt("edMatId"));
+            practicalTask.setInformation(resultSet.getString("information"));
+            practicalTask.setTask(new File(resultSet.getString("url")));
+            log.info("Pract task record was obtained");
+        }
+        else {
+            log.error("Pract task record wasn't found");
+            throw new Exception("Pract task record wasn't found");
         }
         return practicalTask;
     }
