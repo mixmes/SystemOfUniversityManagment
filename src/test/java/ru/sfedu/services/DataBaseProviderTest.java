@@ -22,6 +22,8 @@ class DataBaseProviderTest {
     public static final PracticalTask practTask = new PracticalTask(1,1,"/home/...","Deadline 21.02.2012");
     public static final EducationalMaterial edMat = new EducationalMaterial(1,1);
     public static final Exam exam = new Exam(1,1,"702k","12.10","Math","Main exam","Bond James");
+    public static final Lesson lesson = new Lesson(1,1,"702k","12.10","Math","Lection","Bond James");
+    public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k","12.00","game");
     public static final Connection connection;
 
     static {
@@ -65,7 +67,7 @@ class DataBaseProviderTest {
         statement = connection.prepareStatement(sql);
         statement.executeUpdate();
 
-        sql = "TRUNCATE "+config.getConfigurationEntry(LECTION_DATA_TABLE);
+        sql = "TRUNCATE "+config.getConfigurationEntry(LESSON_DATA_TABLE);
         statement = connection.prepareStatement(sql);
         statement.executeUpdate();
 
@@ -218,5 +220,57 @@ class DataBaseProviderTest {
 
         exam.setPlace("702k");
     }
+    @Test
+    void testSaveLessonRecord() throws Exception {
+        db.saveLessonRecord(lesson);
+
+        assertEquals(lesson,db.getLessonRecordById(lesson.getID()));
+    }
+    @Test
+    void testSaveExistingLessonRecord() throws Exception {
+        db.saveLessonRecord(lesson);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveLessonRecord(lesson);
+        });
+        assertEquals("Lesson record already exists",exception.getMessage());
+    }
+    @Test
+    void testUpdateLessonRecord() throws Exception {
+        db.saveLessonRecord(lesson);
+        lesson.setPlace("700k");
+        db.updateLessonRecord(lesson);
+
+        assertEquals("700k",db.getLessonRecordById(lesson.getID()).getPlace());
+
+        lesson.setPlace("702k");
+    }
+    @Test
+    void testSaveUnEventRecord() throws Exception {
+        db.saveUnEventRecord(unEvent);
+
+        assertEquals(unEvent,db.getUnEventRecordById(unEvent.getID()));
+    }
+    @Test
+    void testSaveExistingUnEventRecord() throws Exception {
+        db.saveUnEventRecord(unEvent);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveUnEventRecord(unEvent);
+        });
+        assertEquals("University event record already exists",exception.getMessage());
+    }
+    @Test
+    void testUpdateUnEventRecord() throws Exception {
+        db.saveUnEventRecord(unEvent);
+        unEvent.setInformation("meeting");
+        db.updateUnEventRecord(unEvent);
+
+        assertEquals("meeting",db.getUnEventRecordById(unEvent.getID()).getInformation());
+
+        unEvent.setInformation("game");
+    }
+
+
 
 }

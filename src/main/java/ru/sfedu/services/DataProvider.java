@@ -23,10 +23,10 @@ public interface DataProvider {
     public void deleteLectionRecord(Lection lection) throws IOException;
     public Lection getLectionRecordById(int id) throws Exception;
     public void updateLectionRecord(Lection lection) throws Exception;
-    public void saveLessonRecord(Lesson lesson);
-    public void deleteLessonRecord(Lesson lesson);
-    public void updateLessonRecord(Lesson lesson);
-    public Lesson getLessonRecordById(int id);
+    public void saveLessonRecord(Lesson lesson) throws Exception;
+    public void deleteLessonRecord(Lesson lesson) throws IOException;
+    public void updateLessonRecord(Lesson lesson) throws IOException;
+    public Lesson getLessonRecordById(int id) throws IOException;
     public void savePracticalTaskRecord(PracticalTask practicalTask) throws Exception;
     public void deletePracticalTaskRecord(PracticalTask practicalTask) throws IOException;
     public void updatePracticalTaskRecord(PracticalTask practicalTask) throws IOException;
@@ -51,8 +51,8 @@ public interface DataProvider {
     public void deleteTeacherRecord(Teacher teacher);
     public void updateTeacherRecord(Teacher teacher);
     public Teacher getTeacherRecordById(int id);
-    public void saveUniversityEventRecord(UniversityEvent universityEvent);
-    public void deleteUniversityEventRecord(UniversityEvent universityEvent);
-    public void updateUniversityEventRecord(UniversityEvent universityEvent);
-    public UniversityEvent getUniversityEventRecordById(int id);
+    public void saveUnEventRecord(UniversityEvent universityEvent) throws Exception;
+    public void deleteUnEventRecord(UniversityEvent universityEvent) throws IOException;
+    public void updateUnEventRecord(UniversityEvent universityEvent) throws IOException;
+    public UniversityEvent getUnEventRecordById(int id) throws IOException;
 }

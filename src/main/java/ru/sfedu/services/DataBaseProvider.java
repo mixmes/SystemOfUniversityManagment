@@ -251,6 +251,31 @@ public class DataBaseProvider implements DataProvider{
         }
         return exam;
     }
+    public ArrayList<Exam> getExamsRecordByScheduleId(int id) throws IOException {
+        ArrayList<Exam> exams = new ArrayList<>();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(EXAM_DATA_TABLE)+" WHERE scheduleId="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(!resultSet.next()){
+                log.error("Exam record wasn't found");
+            }
+            Exam exam = new Exam();
+            while (!resultSet.next()){
+                exam.setID(resultSet.getInt("id"));
+                exam.setScheduleID(resultSet.getInt("scheduleId"));
+                exam.setPlace(resultSet.getString("place"));
+                exam.setTime(resultSet.getString("time"));
+                exam.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
+                exam.setType(resultSet.getString("type"));
+                exam.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
+                exams.add(exam);
+            }
+            log.info("Exam records was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return exams;
+    }
 
     @Override
     public void updateExamRecord(Exam exam) throws IOException {
@@ -337,23 +362,92 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveLessonRecord(Lesson lesson) {
-
+    public void saveLessonRecord(Lesson lesson) throws Exception {
+        String sql = "INSERT INTO "+config.getConfigurationEntry(LESSON_DATA_TABLE) + " (id,scheduleId,place,time,nameOfDiscipline,type,nameOfTeacher)" +
+                "VALUES(?,?,?,?,?,?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
+            preparedStatement.setInt(1,lesson.getID());
+            preparedStatement.setInt(2,lesson.getScheduleID());
+            preparedStatement.setString(3,lesson.getPlace());
+            preparedStatement.setString(4,lesson.getTime());
+            preparedStatement.setString(5,lesson.getNameOfDiscipline());
+            preparedStatement.setString(6,lesson.getType());
+            preparedStatement.setString(7,lesson.getNameOfTeacher());
+            preparedStatement.executeUpdate();
+            log.info("Lesson record was saved");
+        } catch (SQLException e) {
+            log.error("Lesson record already exists");
+            throw new Exception("Lesson record already exists");
+        }
     }
 
     @Override
-    public void deleteLessonRecord(Lesson lesson) {
-
+    public void deleteLessonRecord(Lesson lesson) throws IOException {
+        deleteRecord(config.getConfigurationEntry(LESSON_DATA_TABLE),lesson.getID());
     }
 
     @Override
-    public void updateLessonRecord(Lesson lesson) {
-
+    public void updateLessonRecord(Lesson lesson) throws IOException {
+        String sql = "UPDATE " + config.getConfigurationEntry(LESSON_DATA_TABLE)+" SET place = '"+lesson.getPlace()+"' , time = '"+lesson.getTime()+
+                "' , nameOfDiscipline = '"+lesson.getNameOfDiscipline()+"', type = '"+lesson.getType()+"' , nameOfTeacher = '"+lesson.getNameOfTeacher()+
+                "' WHERE id="+lesson.getID();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Lesson record was updated");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public Lesson getLessonRecordById(int id) {
-        return null;
+    public Lesson getLessonRecordById(int id) throws IOException {
+        Lesson lesson = new Lesson();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(LESSON_DATA_TABLE)+" WHERE id="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(!resultSet.next()){
+                log.error("Lesson record wasn't found");
+                throw new Exception("Lesson record wasn't found");
+            }
+            lesson.setID(resultSet.getInt("id"));
+            lesson.setScheduleID(resultSet.getInt("scheduleId"));
+            lesson.setPlace(resultSet.getString("place"));
+            lesson.setTime(resultSet.getString("time"));
+            lesson.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
+            lesson.setType(resultSet.getString("type"));
+            lesson.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
+            log.info("Lesson record was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return lesson;
+    }
+    public ArrayList<Lesson> getLessonsRecordByScheduleId(int id) throws IOException {
+        ArrayList<Lesson> lessons = new ArrayList<>();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(LESSON_DATA_TABLE)+" WHERE scheduleId="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(!resultSet.next()){
+                log.error("Lesson record wasn't found");
+            }
+            Lesson lesson = new Lesson();
+            while (!resultSet.next()){
+                lesson.setID(resultSet.getInt("id"));
+                lesson.setScheduleID(resultSet.getInt("scheduleId"));
+                lesson.setPlace(resultSet.getString("place"));
+                lesson.setTime(resultSet.getString("time"));
+                lesson.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
+                lesson.setType(resultSet.getString("type"));
+                lesson.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
+                lessons.add(lesson);
+            }
+            log.info("Lesson records was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return lessons;
     }
 
     @Override
@@ -527,22 +621,84 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveUniversityEventRecord(UniversityEvent universityEvent) {
-
+    public void saveUnEventRecord(UniversityEvent unEvent) throws Exception {
+        String sql = "INSERT INTO "+config.getConfigurationEntry(UN_EVENTS_DATA_TABLE) + " (id,scheduleId,place,time,information)" +
+                " VALUES(?,?,?,?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
+            preparedStatement.setInt(1,unEvent.getID());
+            preparedStatement.setInt(2,unEvent.getScheduleID());
+            preparedStatement.setString(3,unEvent.getPlace());
+            preparedStatement.setString(4,unEvent.getTime());
+            preparedStatement.setString(5,unEvent.getInformation());
+            preparedStatement.executeUpdate();
+            log.info("University event record was saved");
+        } catch (SQLException e) {
+            log.error("University event record already exists");
+            throw new Exception("University event record already exists");
+        }
     }
 
     @Override
-    public void deleteUniversityEventRecord(UniversityEvent universityEvent) {
-
+    public void deleteUnEventRecord(UniversityEvent unEvent) throws IOException {
+        deleteRecord(config.getConfigurationEntry(UN_EVENTS_DATA_TABLE),unEvent.getID());
     }
 
     @Override
-    public void updateUniversityEventRecord(UniversityEvent universityEvent) {
-
+    public void updateUnEventRecord(UniversityEvent unEvent) throws IOException {
+        String sql = "UPDATE " + config.getConfigurationEntry(UN_EVENTS_DATA_TABLE)+" SET place = '"+unEvent.getPlace()+"' , time = '"+unEvent.getTime()+
+                "' , information = '"+unEvent.getInformation()+ "' WHERE id="+unEvent.getID();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("University event record was updated");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public UniversityEvent getUniversityEventRecordById(int id) {
-        return null;
+    public UniversityEvent getUnEventRecordById(int id) throws IOException {
+        UniversityEvent universityEvent = new UniversityEvent();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(UN_EVENTS_DATA_TABLE)+" WHERE id="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(!resultSet.next()){
+                log.error("University event record wasn't found");
+                throw new Exception("University event record wasn't found");
+            }
+            universityEvent.setID(resultSet.getInt("id"));
+            universityEvent.setScheduleID(resultSet.getInt("scheduleId"));
+            universityEvent.setPlace(resultSet.getString("place"));
+            universityEvent.setTime(resultSet.getString("time"));
+            universityEvent.setInformation(resultSet.getString("information"));
+            log.info("University event record was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return universityEvent;
+    }
+    public ArrayList<UniversityEvent> getUnEventsRecordByScheduleId(int id) throws IOException {
+        ArrayList<UniversityEvent> unEvents = new ArrayList<>();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(LESSON_DATA_TABLE)+" WHERE scheduleId="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(!resultSet.next()){
+                log.error("University event record wasn't found");
+            }
+            UniversityEvent unEvent = new UniversityEvent();
+            while (!resultSet.next()){
+                unEvent.setID(resultSet.getInt("id"));
+                unEvent.setScheduleID(resultSet.getInt("scheduleId"));
+                unEvent.setPlace(resultSet.getString("place"));
+                unEvent.setTime(resultSet.getString("time"));
+                unEvent.setInformation(resultSet.getString("information"));
+                unEvents.add(unEvent);
+            }
+            log.info("University event records was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return unEvents;
     }
 }

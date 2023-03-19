@@ -1533,3 +1533,38 @@
 2023-03-19 13:46:48,263 INFO r.s.s.DataBaseProvider [main] Exam record was obtained
 2023-03-19 13:46:53,302 INFO r.s.s.DataBaseProvider [main] Exam record was saved
 2023-03-19 13:46:53,338 INFO r.s.s.DataBaseProvider [main] Exam record was obtained
+2023-03-19 14:00:14,224 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:00:59,413 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:00:59,434 ERROR r.s.s.DataBaseProvider [main] Lesson record wasn't found
+2023-03-19 14:01:51,535 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:01:51,553 INFO r.s.s.DataBaseProvider [main] Lesson record was obtained
+2023-03-19 14:02:42,609 ERROR r.s.s.DataBaseProvider [main] Lesson record already exists
+2023-03-19 14:03:11,005 ERROR r.s.s.DataBaseProvider [main] Lesson record already exists
+2023-03-19 14:03:32,259 ERROR r.s.s.DataBaseProvider [main] Lesson record already exists
+2023-03-19 14:03:56,097 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:03:56,109 ERROR r.s.s.DataBaseProvider [main] Lesson record already exists
+2023-03-19 14:05:32,519 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:05:32,535 INFO r.s.s.DataBaseProvider [main] Lesson record was updated
+2023-03-19 14:05:32,551 INFO r.s.s.DataBaseProvider [main] Lesson record was obtained
+2023-03-19 14:06:04,039 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:06:04,060 INFO r.s.s.DataBaseProvider [main] Lesson record was updated
+2023-03-19 14:06:04,076 INFO r.s.s.DataBaseProvider [main] Lesson record was obtained
+2023-03-19 14:06:12,783 INFO r.s.s.DataBaseProvider [main] Lesson record was saved
+2023-03-19 14:06:12,804 INFO r.s.s.DataBaseProvider [main] Lesson record was updated
+2023-03-19 14:06:12,821 INFO r.s.s.DataBaseProvider [main] Lesson record was obtained
+2023-03-19 14:19:58,800 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:20:36,296 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:21:05,212 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:21:26,067 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:21:26,091 ERROR r.s.s.DataBaseProvider [main] University event record wasn't found
+2023-03-19 14:22:05,469 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:22:05,488 ERROR r.s.s.DataBaseProvider [main] University event record wasn't found
+2023-03-19 14:22:38,857 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:22:38,879 ERROR r.s.s.DataBaseProvider [main] University event record wasn't found
+2023-03-19 14:23:33,722 INFO r.s.s.DataBaseProvider [main] University event record was saved
+2023-03-19 14:23:33,742 INFO r.s.s.DataBaseProvider [main] University event record was obtained
+2023-03-19 14:25:10,273 INFO r.s.s.DataBaseProvider [main] University event record was saved
+2023-03-19 14:25:10,284 ERROR r.s.s.DataBaseProvider [main] University event record already exists
+2023-03-19 14:26:55,845 INFO r.s.s.DataBaseProvider [main] University event record was saved
+2023-03-19 14:26:55,863 INFO r.s.s.DataBaseProvider [main] University event record was updated
+2023-03-19 14:26:55,878 INFO r.s.s.DataBaseProvider [main] University event record was obtained

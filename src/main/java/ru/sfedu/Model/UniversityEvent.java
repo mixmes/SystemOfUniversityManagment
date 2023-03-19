@@ -6,8 +6,9 @@ public class UniversityEvent extends Event {
     public UniversityEvent(){
         this.information = "Null";
     }
-    public UniversityEvent(int ID, String place, String time, String information){
+    public UniversityEvent(int ID,int scheduleId, String place, String time, String information){
         this.ID = ID;
+        this.scheduleID = scheduleId;
         this.place = place;
         this.time = time;
         this.information = information;
