@@ -12,9 +12,7 @@ public class StudentGroup {
     private String name;
     private String codeOfGroup;
     ArrayList<Student> groupComposition = new ArrayList<>();
-    private ScheduleOfLessons scheduleOfLessons = new ScheduleOfLessons();
-    private ScheduleOfExams scheduleOfExams = new ScheduleOfExams();
-    private ScheduleOfUniversityEvents scheduleOfUniversityEvents = new ScheduleOfUniversityEvents();
+
     public StudentGroup(){
         this.name = "Null";
         this.codeOfGroup = "XXXXXXXXX";

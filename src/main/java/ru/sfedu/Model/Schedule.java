@@ -1,17 +1,20 @@
 package ru.sfedu.Model;
+import ru.sfedu.Model.TypeOfSchedule;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Schedule  {
-    protected int ID;
-    protected int semester;
-    Schedule(){}
-    Schedule(int ID, int semester){
+    private int ID;
+    private int semester;
+    private  TypeOfSchedule type;
+    private ArrayList<Event> events = new ArrayList<>();
+    public Schedule(){}
+    public Schedule(int ID, int semester, TypeOfSchedule type){
         this.ID = ID;
         this.semester = semester;
+        this.type = type;
     }
-
-
 
     public int getID() {
         return ID;
@@ -27,6 +30,22 @@ public class Schedule  {
 
     public void setSemester(int semester) {
         this.semester = semester;
+    }
+
+    public TypeOfSchedule getType() {
+        return type;
+    }
+
+    public void setType(TypeOfSchedule type) {
+        this.type = type;
+    }
+
+    public ArrayList<Event> getEvents() {
+        return events;
+    }
+
+    public void setEvents(ArrayList<Event> events) {
+        this.events = events;
     }
 
     @Override

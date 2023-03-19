@@ -31,10 +31,10 @@ public interface DataProvider {
     public void deletePracticalTaskRecord(PracticalTask practicalTask) throws IOException;
     public void updatePracticalTaskRecord(PracticalTask practicalTask) throws IOException;
     public PracticalTask getPracticalTaskRecordById(int id) throws Exception;
-    public void saveScheduleRecord(Schedule schedule);
-    public void deleteScheduleRecord(Schedule schedule);
-    public void updateScheduleRecord(Schedule schedule);
-    public Schedule getScheduleRecordById(int id);
+    public void saveScheduleRecord(Schedule schedule) throws Exception;
+    public void deleteScheduleRecord(Schedule schedule) throws IOException;
+    public void updateScheduleRecord(Schedule schedule) throws IOException, SQLException;
+    public Schedule getScheduleRecordById(int id) throws Exception;
     public void saveStudentRecord(Student student);
     public void deleteStudentRecord(Student student);
     public void updateStudentRecord(Student student);

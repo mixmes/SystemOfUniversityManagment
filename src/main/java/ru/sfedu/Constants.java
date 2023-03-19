@@ -15,12 +15,11 @@ public class Constants {
     public static final String LECTION_DATA_TABLE = "lectionTable";
     public static final String LESSON_DATA_TABLE = "lessonTable";
     public static final String PRACT_TASK_DATA_TABLE = "practTaskTable";
-    public static final String EXAM_SCHEDULE_DATA_TABLE = "examScheduleTable";
-    public static final String LESSON_SCHEDULE_DATA_TABLE = "lessonScheduleTable";
-    public static final String UN_EVENTS_SCHEDULE_DATA_TABLE = "unEventsScheduleTable";
+    public static final String SCHEDULE_DATA_TABLE = "schedulesTable";
     public static final String STUDENT_DATA_TABLE = "studentTable";
     public static final String STUDENT_GROUP_DATA_TABLE = "studentGroupTable";
     public static final String STUDENT_WORK_DATA_TABLE = "studentWorkTable";
     public static final String TEACHER_DATA_TABLE = "teacherTable";
     public static final String UN_EVENTS_DATA_TABLE = "unEventsTable";
+
 }

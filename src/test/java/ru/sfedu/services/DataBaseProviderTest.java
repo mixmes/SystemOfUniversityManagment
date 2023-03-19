@@ -24,6 +24,7 @@ class DataBaseProviderTest {
     public static final Exam exam = new Exam(1,1,"702k","12.10","Math","Main exam","Bond James");
     public static final Lesson lesson = new Lesson(1,1,"702k","12.10","Math","Lection","Bond James");
     public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k","12.00","game");
+    public static final Schedule schedule = new Schedule(1,1,TypeOfSchedule.LESSONS);
     public static final Connection connection;
 
     static {
@@ -71,15 +72,7 @@ class DataBaseProviderTest {
         statement = connection.prepareStatement(sql);
         statement.executeUpdate();
 
-        sql = "TRUNCATE "+config.getConfigurationEntry(EXAM_SCHEDULE_DATA_TABLE);
-        statement = connection.prepareStatement(sql);
-        statement.executeUpdate();
-
-        sql = "TRUNCATE "+config.getConfigurationEntry(LESSON_SCHEDULE_DATA_TABLE);
-        statement = connection.prepareStatement(sql);
-        statement.executeUpdate();
-
-        sql = "TRUNCATE "+config.getConfigurationEntry(UN_EVENTS_SCHEDULE_DATA_TABLE);
+        sql = "TRUNCATE "+config.getConfigurationEntry(SCHEDULE_DATA_TABLE);
         statement = connection.prepareStatement(sql);
         statement.executeUpdate();
 
@@ -107,6 +100,8 @@ class DataBaseProviderTest {
     static void init(){
         edMat.setTasks(new ArrayList<>(List.of(practTask)));
         edMat.setLections(new ArrayList<>(List.of(lection)));
+
+        schedule.setEvents(new ArrayList<>(List.of(lesson)));
     }
     @Test
     void saveDisciplineRecord() throws Exception {
@@ -270,7 +265,31 @@ class DataBaseProviderTest {
 
         unEvent.setInformation("game");
     }
+    @Test
+    public void testSaveScheduleRecord() throws Exception {
+        db.saveScheduleRecord(schedule);
 
+        assertEquals(schedule,db.getScheduleRecordById(schedule.getID()));
+    }
+    @Test
+    public void testSaveExistingScheduleRecord() throws Exception {
+        db.saveScheduleRecord(schedule);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveScheduleRecord(schedule);
+        });
+        assertEquals("Schedule record already exists",exception.getMessage());
+    }
+    @Test
+    public void testUpdatedScheduleRecord() throws Exception {
+        db.saveScheduleRecord(schedule);
+        schedule.setSemester(2);
+        db.updateScheduleRecord(schedule);
+
+        assertEquals(2,db.getScheduleRecordById(schedule.getID()).getSemester());
+
+        schedule.setSemester(1);
+    }
 
 
 }
