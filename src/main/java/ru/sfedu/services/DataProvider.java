@@ -7,10 +7,10 @@ import java.sql.SQLException;
 
 
 public interface DataProvider {
-    public void saveDisciplineRecord(Discipline discipline) throws IOException;
+    public void saveDisciplineRecord(Discipline discipline) throws Exception;
     public Discipline getDiscicplineRecordById(int id) throws IOException;
-    public void deleteDisciplineRecordById(Discipline discipline);
-    public void updateDisciplineRecordById(Discipline discipline);
+    public void deleteDisciplineRecord(Discipline discipline);
+    public void updateDisciplineRecord(Discipline discipline) throws IOException;
     public void saveEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws Exception;
     public EducationalMaterial getEducationalMaterialRecordByID(int id) throws Exception;
     public void deleteEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws IOException;

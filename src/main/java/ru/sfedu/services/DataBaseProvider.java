@@ -35,21 +35,61 @@ public class DataBaseProvider implements DataProvider{
         }
     }
     @Override
-    public void saveDisciplineRecord(Discipline discipline) throws IOException {
-
+    public void saveDisciplineRecord(Discipline discipline) throws Exception {
+        String sql = "INSERT INTO " + config.getConfigurationEntry(DISCIPLINE_DATA_TABLE)+" (id,teacherId,name,typeOfMarking) VALUES(?,?,?,?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setInt(1,discipline.getID());
+            statement.setInt(2,discipline.getTeacherID());
+            statement.setString(3,discipline.getName());
+            statement.setString(4,discipline.getTypeOfMarking());
+            statement.executeUpdate();
+            saveEducationalMaterialRecord(discipline.getEducationalMaterial());
+            log.info("Discipline record was saved");
+        } catch (SQLException e) {
+            log.error("Discipline record already exists");
+            throw new Exception("Discipline record already exists");
+        }
     }
     @Override
     public Discipline getDiscicplineRecordById(int id) throws IOException {
-        return null;
+        Discipline discipline = new Discipline();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(DISCIPLINE_DATA_TABLE)+" WHERE id="+id;
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(!resultSet.next()){
+                throw new Exception("Discipline record wasn't found");
+            }
+            discipline.setID(resultSet.getInt("id"));
+            discipline.setTeacherID(resultSet.getInt("teacherId"));
+            discipline.setName(resultSet.getString("name"));
+            discipline.setTypeOfMarking(resultSet.getString("typeOfMarking"));
+            discipline.setEducationalMaterial(getEducationalMatRecordByDisciplineId(id));
+            log.info("Discipline record was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return discipline;
     }
 
     @Override
-    public void deleteDisciplineRecordById(Discipline discipline) {
-
+    public void deleteDisciplineRecord(Discipline discipline) {
+        deleteRecord(DISCIPLINE_DATA_TABLE,discipline.getID());
+        deleteRecord(ED_MAT_DATA_TABLE,discipline.getEducationalMaterial().getID());
     }
 
     @Override
-    public void updateDisciplineRecordById(Discipline discipline) {
+    public void updateDisciplineRecord(Discipline discipline) throws IOException {
+        String sql = "UPDATE "+config.getConfigurationEntry(DISCIPLINE_DATA_TABLE)+" SET name= '"+discipline.getName()+"', typeOfMarking = '"+
+                discipline.getTypeOfMarking()+"' WHERE id="+discipline.getID();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            updateEducationalMaterialRecord(discipline.getEducationalMaterial());
+            log.info("Discipline record was updated");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
@@ -102,6 +142,26 @@ public class DataBaseProvider implements DataProvider{
         edMat.setLections(getLectionRecordByEdMatId(id));
         log.info("Education material record was obtained");
         return  edMat;
+    }
+    public EducationalMaterial getEducationalMatRecordByDisciplineId(int id) throws IOException {
+        EducationalMaterial edMat = new EducationalMaterial();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(ED_MAT_DATA_TABLE)+" WHERE disciplineId="+id;
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(!resultSet.next()){
+                throw new Exception();
+            }
+            edMat.setID(resultSet.getInt("id"));
+            edMat.setDisciplineID(resultSet.getInt("disciplineId"));
+            edMat.setLections(getLectionRecordByEdMatId(edMat.getID()));
+            edMat.setTasks(getPractTaskRecordByEdMatId(edMat.getID()));
+            log.info("Education material record was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            return null;
+        }
+        return edMat;
     }
 
     @Override

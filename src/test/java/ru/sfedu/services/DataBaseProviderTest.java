@@ -1,5 +1,6 @@
 package ru.sfedu.services;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -7,18 +8,32 @@ import ru.sfedu.Model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 import static ru.sfedu.Constants.*;
 import java.io.IOException;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class DataBaseProviderTest {
+
     public static final ConfigurationUtil config = new ConfigurationUtil();
-    public static final Discipline math = new Discipline(1,"Math","Exam");
+    public static final Discipline math = new Discipline(1,1,"Math","Exam");
     public static final Lection lection = new Lection(1,1,"/home/../","Lection 21/02/2012");
     public static final PracticalTask practTask = new PracticalTask(1,1,"/home/...","Deadline 21.02.2012");
     public static final EducationalMaterial edMat = new EducationalMaterial(1,1);
+    public static final Connection connection;
+
+    static {
+        try {
+            connection = DriverManager.getConnection(config.getConfigurationEntry(URL_DATA_BASE),config.getConfigurationEntry(USER_DATA_BASE),
+                    config.getConfigurationEntry(PASS_DATA_BASE));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static DataBaseProvider db;
     static {
         try {
@@ -27,23 +42,99 @@ class DataBaseProviderTest {
             throw new RuntimeException(e);
         }
     }
+    @AfterEach
+    void cleanTables() throws SQLException, IOException {
+        String sql = "TRUNCATE "+config.getConfigurationEntry(ED_MAT_DATA_TABLE);
+        PreparedStatement  statement= connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(DISCIPLINE_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(LECTION_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(PRACT_TASK_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(EXAM_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(LECTION_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(EXAM_SCHEDULE_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(LESSON_SCHEDULE_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(UN_EVENTS_SCHEDULE_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(STUDENT_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(STUDENT_GROUP_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(STUDENT_WORK_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(TEACHER_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+
+        sql = "TRUNCATE "+config.getConfigurationEntry(UN_EVENTS_DATA_TABLE);
+        statement = connection.prepareStatement(sql);
+        statement.executeUpdate();
+    }
     @BeforeAll
     static void init(){
         edMat.setTasks(new ArrayList<>(List.of(practTask)));
         edMat.setLections(new ArrayList<>(List.of(lection)));
     }
     @Test
-    void saveDisciplineRecord() throws IOException {
-        math.setTeacherID(1);
+    void saveDisciplineRecord() throws Exception {
         db.saveDisciplineRecord(math);
+
+        assertEquals(math,db.getDiscicplineRecordById(math.getID()));
+    }
+    @Test
+    void saveExistingDisciplineRecord() throws Exception {
+        db.saveDisciplineRecord(math);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveDisciplineRecord(math);
+        });
+        assertEquals("Discipline record already exists",exception.getMessage());
+    }
+    @Test
+    void updateDisciplineRecord() throws Exception {
+        db.saveDisciplineRecord(math);
+        math.setName("Not math");
+        db.updateDisciplineRecord(math);
+
+        assertEquals("Not math",db.getDiscicplineRecordById(math.getID()).getName());
+
+        math.setName("Math");
     }
     @Test
     void testSaveLectionRecord() throws Exception {
         db.saveLectionRecord(lection);
 
         assertEquals(lection,db.getLectionRecordById(lection.getID()));
-
-        db.deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE), lection.getID());
     }
     @Test
     void testSaveExistingLectionRecord() throws Exception {
@@ -51,8 +142,6 @@ class DataBaseProviderTest {
 
         Exception exception = assertThrows(Exception.class,()->{db.saveLectionRecord(lection);});
         assertEquals("Record already exists",exception.getMessage());
-
-        db.deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE), lection.getID());
     }
     @Test
     void testUpdateLectionRecord() throws Exception {
@@ -62,7 +151,6 @@ class DataBaseProviderTest {
 
         assertEquals(lection,db.getLectionRecordById(lection.getID()));
 
-        db.deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE), lection.getID());
         lection.setInformation("Lection 21/02/2012");
     }
     @Test
@@ -70,8 +158,6 @@ class DataBaseProviderTest {
         db.savePracticalTaskRecord(practTask);
 
         assertEquals(practTask,db.getPracticalTaskRecordById(practTask.getID()));
-
-        db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE), practTask.getID());
     }
     @Test
     void testSaveExistingPractTaskRecord() throws Exception {
@@ -82,7 +168,6 @@ class DataBaseProviderTest {
         });
         assertEquals("Pract task record already exists",exception.getMessage());
 
-        db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE), practTask.getID());
     }
     @Test
     void testUpdatePractTaskRecord() throws Exception {
@@ -92,7 +177,6 @@ class DataBaseProviderTest {
 
         assertEquals("_",db.getPracticalTaskRecordById(practTask.getID()).getInformation());
 
-        db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE),practTask.getID());
         practTask.setInformation("Deadline 21.02.2012");
     }
     @Test
@@ -100,23 +184,6 @@ class DataBaseProviderTest {
         db.saveEducationalMaterialRecord(edMat);
 
         assertEquals(edMat,db.getEducationalMaterialRecordByID(edMat.getID()));
-
-        db.deleteRecord(config.getConfigurationEntry(ED_MAT_DATA_TABLE), edMat.getID());
-        edMat.getLections().stream().forEach(s-> {
-            try {
-                db.deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE),s.getID());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
-        edMat.getTasks().stream().forEach(s->{
-            try {
-                db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE),s.getID());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
-        
     }
     @Test
     void saveExistingEdMatRecord() throws Exception {
@@ -124,22 +191,6 @@ class DataBaseProviderTest {
 
         Exception exception = assertThrows(Exception.class,()->{db.saveEducationalMaterialRecord(edMat);});
         assertEquals("Education material record already exists",exception.getMessage());
-
-        db.deleteRecord(config.getConfigurationEntry(ED_MAT_DATA_TABLE), edMat.getID());
-        edMat.getLections().stream().forEach(s-> {
-            try {
-                db.deleteRecord(config.getConfigurationEntry(LECTION_DATA_TABLE),s.getID());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
-        edMat.getTasks().stream().forEach(s->{
-            try {
-                db.deleteRecord(config.getConfigurationEntry(PRACT_TASK_DATA_TABLE),s.getID());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
     }
 
 }

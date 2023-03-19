@@ -12,8 +12,9 @@ public class Discipline {
         this.name = "Null";
         this.typeOfMarking = "Null";
     }
-    public Discipline(int id, String name , String typeOfMarking){
+    public Discipline(int id,int teacherID , String name , String typeOfMarking){
         this.ID = id;
+        this.teacherID = teacherID;
         this.name =  name;
         this.typeOfMarking = typeOfMarking;
     }
