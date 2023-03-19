@@ -21,6 +21,7 @@ class DataBaseProviderTest {
     public static final Lection lection = new Lection(1,1,"/home/../","Lection 21/02/2012");
     public static final PracticalTask practTask = new PracticalTask(1,1,"/home/...","Deadline 21.02.2012");
     public static final EducationalMaterial edMat = new EducationalMaterial(1,1);
+    public static final Exam exam = new Exam(1,1,"702k","12.10","Math","Main exam","Bond James");
     public static final Connection connection;
 
     static {
@@ -126,7 +127,7 @@ class DataBaseProviderTest {
         math.setName("Not math");
         db.updateDisciplineRecord(math);
 
-        assertEquals("Not math",db.getDiscicplineRecordById(math.getID()).getName());
+        assertEquals("Not math",db.getDiscicplineRecordById(math.getID()));
 
         math.setName("Math");
     }
@@ -191,6 +192,31 @@ class DataBaseProviderTest {
 
         Exception exception = assertThrows(Exception.class,()->{db.saveEducationalMaterialRecord(edMat);});
         assertEquals("Education material record already exists",exception.getMessage());
+    }
+    @Test
+    void testSaveExamRecord() throws Exception {
+        db.saveExamRecord(exam);
+
+        assertEquals(exam,db.getExamRecordByID(exam.getID()));
+    }
+    @Test
+    void testSaveExistingExamRecord() throws Exception {
+        db.saveExamRecord(exam);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveExamRecord(exam);
+        });
+        assertEquals("Exam record already exists",exception.getMessage());
+    }
+    @Test
+    void testUpdateExamRecord() throws Exception {
+        db.saveExamRecord(exam);
+        exam.setPlace("700k");
+        db.updateExamRecord(exam);
+
+        assertEquals("700k",db.getExamRecordByID(exam.getID()).getPlace());
+
+        exam.setPlace("702k");
     }
 
 }

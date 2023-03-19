@@ -10,8 +10,9 @@ public class Exam extends Event{
     public Exam(){
         this.nameOfDiscipline = this.nameOfTeacher = this.type = this.place = "Null";
     }
-    public Exam(int ID, String place, String time, String nameOfDiscipline , String type , String nameOfTeacher){
+    public Exam(int ID,int scheduleId, String place, String time, String nameOfDiscipline , String type , String nameOfTeacher){
         this.ID = ID;
+        this.scheduleID = scheduleId;
         this.place = place;
         this.time = time;
         this.nameOfDiscipline = nameOfDiscipline;

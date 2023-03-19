@@ -15,10 +15,10 @@ public interface DataProvider {
     public EducationalMaterial getEducationalMaterialRecordByID(int id) throws Exception;
     public void deleteEducationalMaterialRecord(EducationalMaterial educationalMaterial) throws IOException;
     public void updateEducationalMaterialRecord(EducationalMaterial educationalMaterial);
-    public void saveExamRecord(Exam exam);
-    public void deleteExamRecord(Exam exam);
-    public Exam getExamRecordByID(int id);
-    public void updateExamRecord(Exam exam);
+    public void saveExamRecord(Exam exam) throws Exception;
+    public void deleteExamRecord(Exam exam) throws IOException;
+    public Exam getExamRecordByID(int id) throws IOException;
+    public void updateExamRecord(Exam exam) throws IOException;
     public void saveLectionRecord(Lection lection) throws Exception;
     public void deleteLectionRecord(Lection lection) throws IOException;
     public Lection getLectionRecordById(int id) throws Exception;

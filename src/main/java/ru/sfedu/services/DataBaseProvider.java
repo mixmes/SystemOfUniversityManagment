@@ -202,23 +202,66 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveExamRecord(Exam exam) {
-
+    public void saveExamRecord(Exam exam) throws Exception {
+        String sql = "INSERT INTO "+config.getConfigurationEntry(EXAM_DATA_TABLE) + " (id,scheduleId,place,time,nameOfDiscipline,type,nameOfTeacher)" +
+                "VALUES(?,?,?,?,?,?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
+            preparedStatement.setInt(1,exam.getID());
+            preparedStatement.setInt(2,exam.getScheduleID());
+            preparedStatement.setString(3,exam.getPlace());
+            preparedStatement.setString(4,exam.getTime());
+            preparedStatement.setString(5,exam.getNameOfDiscipline());
+            preparedStatement.setString(6,exam.getType());
+            preparedStatement.setString(7,exam.getNameOfTeacher());
+            preparedStatement.executeUpdate();
+            log.info("Exam record was saved");
+        } catch (SQLException e) {
+            log.error("Exam record already exists");
+            throw new Exception("Exam record already exists");
+        }
     }
 
     @Override
-    public void deleteExamRecord(Exam exam) {
-
+    public void deleteExamRecord(Exam exam) throws IOException {
+        deleteRecord(config.getConfigurationEntry(EXAM_DATA_TABLE),exam.getID());
     }
 
     @Override
-    public Exam getExamRecordByID(int id) {
-        return null;
+    public Exam getExamRecordByID(int id) throws IOException {
+        Exam exam = new Exam();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(EXAM_DATA_TABLE)+" WHERE id="+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(!resultSet.next()){
+                log.error("Exam record wasn't found");
+                throw new Exception("Exam record wasn't found");
+            }
+            exam.setID(resultSet.getInt("id"));
+            exam.setScheduleID(resultSet.getInt("scheduleId"));
+            exam.setPlace(resultSet.getString("place"));
+            exam.setTime(resultSet.getString("time"));
+            exam.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
+            exam.setType(resultSet.getString("type"));
+            exam.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
+            log.info("Exam record was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return exam;
     }
 
     @Override
-    public void updateExamRecord(Exam exam) {
-
+    public void updateExamRecord(Exam exam) throws IOException {
+        String sql = "UPDATE " + config.getConfigurationEntry(EXAM_DATA_TABLE)+" SET place = '"+exam.getPlace()+"' , time = '"+exam.getTime()+
+                "' , nameOfDiscipline = '"+exam.getNameOfDiscipline()+"', type = '"+exam.getType()+"' , nameOfTeacher = '"+exam.getNameOfTeacher()+
+                "' WHERE id="+exam.getID();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
