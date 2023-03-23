@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import ru.sfedu.Model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 import static ru.sfedu.Constants.*;
+
+import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -25,6 +27,8 @@ class DataBaseProviderTest {
     public static final Lesson lesson = new Lesson(1,1,"702k","12.10","Math","Lection","Bond James");
     public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k","12.00","game");
     public static final Schedule schedule = new Schedule(1,1,TypeOfSchedule.LESSONS);
+    public static final StudentWork studentWork = new StudentWork(1,1);
+
     public static final Connection connection;
 
     static {
@@ -96,12 +100,19 @@ class DataBaseProviderTest {
         statement = connection.prepareStatement(sql);
         statement.executeUpdate();
     }
+
     @BeforeAll
     static void init(){
         edMat.setTasks(new ArrayList<>(List.of(practTask)));
         edMat.setLections(new ArrayList<>(List.of(lection)));
 
         schedule.setEvents(new ArrayList<>(List.of(lesson)));
+
+        studentWork.setFileOfWork(new File("/mihail/home/task.txt"));
+        studentWork.setMark(5);
+        studentWork.setNameOfWork("Work");
+        studentWork.setDiscipline("math");
+        studentWork.setHomework(false);
     }
     @Test
     void saveDisciplineRecord() throws Exception {
@@ -285,11 +296,32 @@ class DataBaseProviderTest {
         db.saveScheduleRecord(schedule);
         schedule.setSemester(2);
         db.updateScheduleRecord(schedule);
-
         assertEquals(2,db.getScheduleRecordById(schedule.getID()).getSemester());
 
         schedule.setSemester(1);
     }
+    @Test
+    public void testSaveStudentWorkRecord() throws Exception {
+        db.saveStudentWorKRecord(studentWork);
+        assertEquals(studentWork,db.getStudentWorkRecordById(studentWork.getID()));
+    }
+    @Test
+    public void testSaveExistingStudentWorkRecord() throws Exception {
+        db.saveStudentWorKRecord(studentWork);
 
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveStudentWorKRecord(studentWork);
+        });
+        assertEquals("Student work record already exists",exception.getMessage());
+    }
+    @Test
+    public void testUpdateStudentWorkRecord() throws Exception {
+        db.saveStudentWorKRecord(studentWork);
+        studentWork.setDiscipline("Meth");
+        db.updateStudentWorkRecord(studentWork);
+
+        assertEquals("Meth",db.getStudentWorkRecordById(studentWork.getID()).getDiscipline());
+        studentWork.setDiscipline("Math");
+    }
 
 }

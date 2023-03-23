@@ -729,23 +729,87 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveStudentWorKRecord(StudentWork studentWork) {
+    public void saveStudentWorKRecord(StudentWork studentWork) throws Exception {
+        String sql = "INSERT INTO " + config.getConfigurationEntry(STUDENT_WORK_DATA_TABLE)+" (id,studentId,nameOfWork,disciplineName,mark,homework ,url) VALUES(?,?,?,?,?,?,?)";
+        try(PreparedStatement statement  = connection.prepareStatement(sql)){
+            statement.setInt(1,studentWork.getID());
+            statement.setInt(2,studentWork.getStudentID());
+            statement.setString(3,studentWork.getNameOfWork());
+            statement.setString(4,studentWork.getDiscipline());
+            statement.setInt(5,studentWork.getMark());
+            statement.setString(6, Boolean.toString(studentWork.isHomework()));
+            statement.setString(7,studentWork.getFileOfWork().getPath());
 
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void deleteStudentWorkRecord(StudentWork studentWork) {
-
+    public void deleteStudentWorkRecord(StudentWork studentWork) throws IOException {
+        deleteRecord(config.getConfigurationEntry(STUDENT_WORK_DATA_TABLE),studentWork.getID());
     }
 
     @Override
-    public void updateStudentWorkRecord(StudentWork studentWork) {
-
+    public void updateStudentWorkRecord(StudentWork studentWork) throws IOException {
+        String sql = "UPDATE " + config.getConfigurationEntry(STUDENT_WORK_DATA_TABLE) + " SET nameOfWork = '"+studentWork.getNameOfWork()+"' , " +
+                "disciplineName = '" + studentWork.getDiscipline()+"' , mark = '"+studentWork.getMark()+"' , homework = '"+studentWork.isHomework()+
+                "' , url = '" + studentWork.getFileOfWork().getPath()+"' WHERE id = "+studentWork.getID();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public StudentWork getStudentWorkRecordById(StudentWork studentWork) {
-        return null;
+    public StudentWork getStudentWorkRecordById(int id) throws Exception {
+        StudentWork studentWork = new StudentWork();
+        String sql = "SELECT * FROM " + config.getConfigurationEntry(STUDENT_WORK_DATA_TABLE)+" WHERE id = "+ id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(!resultSet.next()){
+                log.error("Student work record wasn't found");
+                throw new Exception("Student work record wasn't found");
+            }
+            studentWork.setID(resultSet.getInt("id"));
+            studentWork.setStudentID(resultSet.getInt("studentId"));
+            studentWork.setNameOfWork(resultSet.getString("nameOfWork"));
+            studentWork.setDiscipline(resultSet.getString("disciplineName"));
+            studentWork.setMark(resultSet.getInt("mark"));
+            studentWork.setHomework(Boolean.valueOf(resultSet.getString("homeWork")));
+            studentWork.setFileOfWork(new File(resultSet.getString("url")));
+            log.info("Student work record was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            throw new Exception(e);
+        }
+        return studentWork;
+    }
+    public ArrayList<StudentWork> getStudentWorksByStudentId(int id) throws IOException {
+        ArrayList<StudentWork> studentWorks = new ArrayList<>();
+        String sql = "SELECT * FROM " + config.getConfigurationEntry(STUDENT_WORK_DATA_TABLE)+ "WHERE studentId = "+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery(sql);
+            StudentWork studentWork = new StudentWork();
+            while(resultSet.next()){
+                studentWork.setID(resultSet.getInt("id"));
+                studentWork.setStudentID(resultSet.getInt("studentId"));
+                studentWork.setNameOfWork(resultSet.getString("nameOfWork"));
+                studentWork.setDiscipline(resultSet.getString("nameOfDiscipline"));
+                studentWork.setMark(resultSet.getInt("mark"));
+                studentWork.setHomework(resultSet.getBoolean("homeWork"));
+                studentWork.setFileOfWork(new File(resultSet.getString("url")));
+
+                studentWorks.add(studentWork);
+            }
+            log.info("Student work records was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return studentWorks;
     }
 
     @Override

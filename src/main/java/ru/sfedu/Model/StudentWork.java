@@ -1,6 +1,7 @@
 package ru.sfedu.Model;
 
 import java.io.File;
+import java.util.Objects;
 
 public class StudentWork {
     private int ID ;
@@ -10,6 +11,14 @@ public class StudentWork {
     private int mark ;
     private boolean homework;
     private File fileOfWork ;
+
+    public StudentWork() {
+    }
+
+    public StudentWork(int ID, int studentID) {
+        this.ID = ID;
+        this.studentID = studentID;
+    }
 
     public int getStudentID() {
         return studentID;
@@ -65,5 +74,18 @@ public class StudentWork {
 
     public void setFileOfWork(File fileOfWork) {
         this.fileOfWork = fileOfWork;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StudentWork that = (StudentWork) o;
+        return ID == that.ID && studentID == that.studentID && mark == that.mark && homework == that.homework && Objects.equals(nameOfWork, that.nameOfWork) && Objects.equals(discipline, that.discipline);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ID, studentID, nameOfWork, discipline, mark, homework);
     }
 }

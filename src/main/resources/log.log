@@ -1620,3 +1620,19 @@
 2023-03-19 18:25:18,483 INFO r.s.s.DataBaseProvider [main] Schedule record was saved
 2023-03-19 18:25:18,508 INFO r.s.s.DataBaseProvider [main] Lesson record was updated
 2023-03-19 18:25:18,525 INFO r.s.s.DataBaseProvider [main] Lesson records was obtained
+2023-03-23 11:18:06,470 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:19:06,862 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:19:47,526 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:20:46,882 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:21:31,471 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:22:49,745 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:25:29,267 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:29:27,509 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:30:28,638 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:30:47,604 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:31:28,303 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 11:35:26,044 INFO r.s.s.DataBaseProvider [main] Student work record was obtained
+2023-03-23 11:35:51,359 INFO r.s.s.DataBaseProvider [main] Student work record was obtained
+2023-03-23 12:09:32,632 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
+2023-03-23 12:09:52,772 INFO r.s.s.DataBaseProvider [main] Student work record was obtained
+2023-03-23 12:10:45,463 INFO r.s.s.DataBaseProvider [main] Student work record was obtained

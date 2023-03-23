@@ -43,10 +43,10 @@ public interface DataProvider {
     public void deleteStudentGroupRecord(StudentGroup studentGroup);
     public void updateStudentGroupRecord(StudentGroup studentGroup);
     public StudentGroup getStudentGroupRecordById(int id);
-    public void saveStudentWorKRecord(StudentWork studentWork);
-    public void deleteStudentWorkRecord(StudentWork studentWork);
-    public void updateStudentWorkRecord(StudentWork studentWork);
-    public StudentWork getStudentWorkRecordById(StudentWork studentWork);
+    public void saveStudentWorKRecord(StudentWork studentWork) throws Exception;
+    public void deleteStudentWorkRecord(StudentWork studentWork) throws IOException;
+    public void updateStudentWorkRecord(StudentWork studentWork) throws IOException;
+    public StudentWork getStudentWorkRecordById(int id) throws Exception;
     public void saveTeacherRecord(Teacher teacher);
     public void deleteTeacherRecord(Teacher teacher);
     public void updateTeacherRecord(Teacher teacher);
