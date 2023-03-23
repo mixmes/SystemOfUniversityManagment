@@ -689,43 +689,155 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveStudentRecord(Student student) {
-
+    public void saveStudentRecord(Student student) throws Exception {
+        String sql = "INSERT INTO " +config.getConfigurationEntry(STUDENT_DATA_TABLE)+ " (id,name) VALUES(?,?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setInt(1,student.getID());
+            statement.setString(2,student.getName());
+            statement.setInt(3,student.getStudentGroupId());
+            statement.executeUpdate();
+            log.info("Student record was saved");
+        } catch (SQLException e) {
+            log.error("Student record already exists");
+            throw new Exception("Student record already exists");
+        }
     }
 
     @Override
-    public void deleteStudentRecord(Student student) {
-
+    public void deleteStudentRecord(Student student) throws IOException {
+        deleteRecord(config.getConfigurationEntry(STUDENT_DATA_TABLE),student.getID());
     }
 
     @Override
-    public void updateStudentRecord(Student student) {
-
+    public void updateStudentRecord(Student student) throws IOException {
+        String sql = "UPDATE " + config.getConfigurationEntry(STUDENT_DATA_TABLE)+" SET id = '"+student.getID()+"' , name = '"+student.getName()+
+                "' WHERE id = "+student.getID();
+        try(Statement statement = connection.createStatement()){
+            statement.executeUpdate(sql);
+            log.info("Student record was saved");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public Student getStudentRecordById(int id) {
-        return null;
+    public Student getStudentRecordById(int id) throws Exception {
+        Student student = new Student();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(STUDENT_DATA_TABLE)+" WHERE id = "+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            if(resultSet.next()){
+                student.setID(resultSet.getInt("id"));
+                student.setName(resultSet.getString("name"));
+                student.setStudentGroupId(resultSet.getInt("studentGroupId"));
+                log.info("Student record was obtained");
+            }
+            else {
+                log.error("Student record wasn't found");
+                throw new Exception("Student record wasn't found");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return student;
+    }
+    public ArrayList<Student> getStudentRecordsByGroupId(int id) throws IOException {
+        ArrayList<Student> students = new ArrayList<>();
+        String sql = "SELECT * FROM " + config.getConfigurationEntry(STUDENT_DATA_TABLE)+ " WHERE studentGroupId = "+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet resultSet = statement.executeQuery();
+            Student student = new Student();
+            while (resultSet.next()){
+                student.setID(resultSet.getInt("id"));
+                student.setName(resultSet.getString("name"));
+                student.setStudentGroupId(resultSet.getInt("studentGroupId"));
+                students.add(student);
+            }
+            log.info("Student records was obtained");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return students;
     }
 
     @Override
-    public void saveStudentGroupRecord(StudentGroup studentGroup) {
-
+    public void saveStudentGroupRecord(StudentGroup studentGroup) throws Exception {
+        String sql = "INSERT INTO " + config.getConfigurationEntry(STUDENT_GROUP_DATA_TABLE) + " (id,course,name,codeOfGroup) VALUES(?,?,?,?)";
+        try(PreparedStatement statement  = connection.prepareStatement(sql)){
+            statement.setInt(1,studentGroup.getID());
+            statement.setInt(2,studentGroup.getCourse());
+            statement.setString(3,studentGroup.getName());
+            statement.setString(4, studentGroup.getCodeOfGroup());
+            statement.executeUpdate();
+            studentGroup.getGroupComposition().stream().forEach(s-> {
+                try {
+                    saveStudentRecord(s);
+                } catch (Exception e) {
+                    log.info(e.getMessage());
+                }
+            });
+            log.info("Student group record was saved");
+        } catch (SQLException e) {
+            log.error("Student group record already exists");
+            throw new Exception("Student group record already exists");
+        }
     }
 
     @Override
-    public void deleteStudentGroupRecord(StudentGroup studentGroup) {
-
+    public void deleteStudentGroupRecord(StudentGroup studentGroup) throws IOException {
+        deleteRecord(config.getConfigurationEntry(STUDENT_GROUP_DATA_TABLE),studentGroup.getID());
+        studentGroup.getGroupComposition().stream().forEach(s-> {
+            try {
+                deleteRecord(config.getConfigurationEntry(STUDENT_GROUP_DATA_TABLE),s.getID());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Override
-    public void updateStudentGroupRecord(StudentGroup studentGroup) {
-
+    public void updateStudentGroupRecord(StudentGroup studentGroup) throws IOException{
+        String sql = "UPDATE "+ config.getConfigurationEntry(STUDENT_GROUP_DATA_TABLE)+ " SET course = '"+studentGroup.getCourse()+"', name = '"+
+                studentGroup.getName()+"', codeOfGroup = '"+studentGroup.getCodeOfGroup()+"' WHERE id = "+studentGroup.getID();
+        try(Statement statement = connection.createStatement()){
+            statement.executeUpdate(sql);
+            studentGroup.getGroupComposition().stream().forEach(s-> {
+                try {
+                    updateStudentRecord(s);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Student group record was updated");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public StudentGroup getStudentGroupRecordById(int id) {
-        return null;
+    public StudentGroup getStudentGroupRecordById(int id) throws Exception {
+        StudentGroup studentGroup = new StudentGroup();
+       String sql = "SELECT * FROM "+ config.getConfigurationEntry(STUDENT_GROUP_DATA_TABLE)+ " WHERE id = "+id;
+       try(PreparedStatement statement  = connection.prepareStatement(sql)){
+           ResultSet resultSet = statement.executeQuery();
+           if(resultSet.next()){
+                studentGroup.setID(resultSet.getInt("id"));
+                studentGroup.setCourse(resultSet.getInt("course"));
+                studentGroup.setName(resultSet.getString("name"));
+                studentGroup.setCodeOfGroup(resultSet.getString("codeOfGroup"));
+                studentGroup.setGroupComposition(getStudentRecordsByGroupId(id));
+                log.info("Student group record was obtained");
+           }
+           else {
+               log.error("Student group record wasn't found");
+               throw new Exception("Student group record wasn't found");
+           }
+       } catch (SQLException e) {
+           throw new RuntimeException(e);
+       } catch (Exception e) {
+           throw e;
+       }
+       return studentGroup;
     }
 
     @Override

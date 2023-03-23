@@ -1636,3 +1636,63 @@
 2023-03-23 12:09:32,632 ERROR r.s.s.DataBaseProvider [main] Student work record wasn't found
 2023-03-23 12:09:52,772 INFO r.s.s.DataBaseProvider [main] Student work record was obtained
 2023-03-23 12:10:45,463 INFO r.s.s.DataBaseProvider [main] Student work record was obtained
+2023-03-23 13:24:15,052 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:24:15,070 INFO r.s.s.DataBaseProvider [main] Student record was obtained
+2023-03-23 13:25:55,070 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:25:55,083 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:26:39,289 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:28:09,564 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:28:09,581 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:28:09,600 INFO r.s.s.DataBaseProvider [main] Student record was obtained
+2023-03-23 13:34:05,972 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:34:43,420 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:34:43,442 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:36:06,510 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:36:06,530 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:36:29,137 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:36:29,139 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:36:29,155 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:37:19,238 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:37:19,240 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:39:44,375 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:39:44,401 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:39:44,402 INFO r.s.s.DataBaseProvider [main] Student group record was obtained
+2023-03-23 13:40:37,492 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:40:37,495 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:40:37,495 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:40:37,514 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:40:37,514 INFO r.s.s.DataBaseProvider [main] Student group record was obtained
+2023-03-23 13:50:21,172 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:50:21,174 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:50:21,175 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:50:21,184 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:50:52,415 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:50:52,417 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:50:52,418 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:50:52,427 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:51:59,618 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:51:59,620 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:51:59,620 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:51:59,629 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:53:45,004 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:53:45,006 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:53:45,006 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:53:45,016 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:54:27,503 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:54:27,505 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:54:27,505 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:54:27,515 ERROR r.s.s.DataBaseProvider [main] Student group record already exists
+2023-03-23 13:56:11,160 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:56:11,162 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:56:11,162 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:56:11,196 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:56:11,196 INFO r.s.s.DataBaseProvider [main] Student group record was updated
+2023-03-23 13:56:11,215 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:56:11,216 INFO r.s.s.DataBaseProvider [main] Student group record was obtained
+2023-03-23 13:56:24,269 ERROR r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:56:24,271 INFO r.s.s.DataBaseProvider [main] Student record already exists
+2023-03-23 13:56:24,271 INFO r.s.s.DataBaseProvider [main] Student group record was saved
+2023-03-23 13:56:24,295 INFO r.s.s.DataBaseProvider [main] Student record was saved
+2023-03-23 13:56:24,295 INFO r.s.s.DataBaseProvider [main] Student group record was updated
+2023-03-23 13:56:24,310 INFO r.s.s.DataBaseProvider [main] Student records was obtained
+2023-03-23 13:56:24,310 INFO r.s.s.DataBaseProvider [main] Student group record was obtained

@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,6 +29,8 @@ class DataBaseProviderTest {
     public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k","12.00","game");
     public static final Schedule schedule = new Schedule(1,1,TypeOfSchedule.LESSONS);
     public static final StudentWork studentWork = new StudentWork(1,1);
+    public static final Student student  = new Student(1,"Smernikov Mihail",1);
+    public static final StudentGroup studentGroup = new StudentGroup(1,1,"Priborostroenie","12.03.01");
 
     public static final Connection connection;
 
@@ -113,6 +116,8 @@ class DataBaseProviderTest {
         studentWork.setNameOfWork("Work");
         studentWork.setDiscipline("math");
         studentWork.setHomework(false);
+
+        studentGroup.setGroupComposition(new ArrayList<>(List.of(student)));
     }
     @Test
     void saveDisciplineRecord() throws Exception {
@@ -323,5 +328,52 @@ class DataBaseProviderTest {
         assertEquals("Meth",db.getStudentWorkRecordById(studentWork.getID()).getDiscipline());
         studentWork.setDiscipline("Math");
     }
+    @Test
+    public void testSaveStudentRecord() throws Exception {
+        db.saveStudentRecord(student);
 
+        assertEquals(student,db.getStudentRecordById(student.getID()));
+    }
+    @Test
+    public void testSaveExistingRecord() throws Exception {
+        db.saveStudentRecord(student);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveStudentRecord(student);
+        });
+        assertEquals("Student record already exists",exception.getMessage());
+    }
+    @Test
+    public void testUpdateExistingRecord() throws Exception {
+        db.saveStudentRecord(student);
+        student.setName("Ivan Ivanov");
+        db.updateStudentRecord(student);
+
+        assertEquals("Ivan Ivanov",db.getStudentRecordById(student.getID()).getName());
+
+        student.setName("Mihail Smernikov");
+    }
+    @Test
+    public void testSaveStudentGroupRecord() throws Exception {
+        db.saveStudentGroupRecord(studentGroup);
+
+        assertEquals(studentGroup,db.getStudentGroupRecordById(studentGroup.getID()));
+    }
+    @Test
+    public void testExistingStudentGroupRecord() throws Exception {
+        db.saveStudentGroupRecord(studentGroup);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            db.saveStudentGroupRecord(studentGroup);
+        });
+        assertEquals("Student group record already exists",exception.getMessage());
+    }
+    @Test
+    public void testUpdateStudentGroupRecord() throws Exception {
+        db.saveStudentGroupRecord(studentGroup);
+        studentGroup.setName("Math");
+        db.updateStudentGroupRecord(studentGroup);
+
+        assertEquals("Math",db.getStudentGroupRecordById(studentGroup.getID()).getName());
+    }
 }

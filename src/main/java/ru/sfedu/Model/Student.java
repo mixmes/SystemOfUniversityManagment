@@ -11,11 +11,12 @@ public class Student {
     private int ID;
     private String name ;
     private ArrayList<StudentWork> studentWorks = new ArrayList<>();
-    private StudentGroup studentGroup = new StudentGroup();
+    private int studentGroupId ;
     public Student(){this.name = "Null Null  Null";}
-    public Student(int ID, String name){
+    public Student(int ID, String name,int studentGroupId){
         this.ID = ID;
         this.name = name;
+        this.studentGroupId = studentGroupId;
     }
 
     public int getID() {
@@ -43,12 +44,12 @@ public class Student {
         this.studentWorks = studentWorks;
     }
 
-    public StudentGroup getStudentGroup() {
-        return studentGroup;
+    public int getStudentGroupId() {
+        return studentGroupId;
     }
 
-    public void setStudentGroup(StudentGroup studentGroup) {
-        this.studentGroup = studentGroup;
+    public void setStudentGroupId(int studentGroupId) {
+        this.studentGroupId = studentGroupId;
     }
 
     @Override
