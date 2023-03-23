@@ -3,16 +3,15 @@ package ru.sfedu.services;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.sfedu.Constants;
 import ru.sfedu.Model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 import static ru.sfedu.Constants.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.rmi.server.ExportException;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class DataBaseProvider implements DataProvider{
     private Connection connection ;
@@ -71,6 +70,25 @@ public class DataBaseProvider implements DataProvider{
             throw new RuntimeException(e);
         }
         return discipline;
+    }
+    public ArrayList<Discipline> getDisciplineRecordsByTeacherId(int id) throws IOException {
+        ArrayList<Discipline> disciplines = new ArrayList<>();
+        String sql = "SELECT * FROM "+ config.getConfigurationEntry(DISCIPLINE_DATA_TABLE)+ " WHERE teacherId = "+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet  resultSet = statement.executeQuery();
+            Discipline discipline = new Discipline();
+            while (resultSet.next()){
+                discipline.setID(resultSet.getInt("id"));
+                discipline.setTeacherID(resultSet.getInt("teacherId"));
+                discipline.setName(resultSet.getString("name"));
+                discipline.setTypeOfMarking(resultSet.getString("typeOfMarking"));
+                discipline.setEducationalMaterial(getEducationalMatRecordByDisciplineId(id));
+                disciplines.add(discipline);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return disciplines;
     }
 
     @Override
@@ -565,7 +583,7 @@ public class DataBaseProvider implements DataProvider{
             }
             schedule.setID(resultSet.getInt("id"));
             schedule.setSemester(resultSet.getInt("semester"));
-            schedule.setType(TypeOfSchedule.valueOf(resultSet.getString("type")));
+            schedule.setType(Constants.TypeOfSchedule.valueOf(resultSet.getString("type")));
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (Exception e) {
@@ -925,23 +943,63 @@ public class DataBaseProvider implements DataProvider{
     }
 
     @Override
-    public void saveTeacherRecord(Teacher teacher) {
-
+    public void saveTeacherRecord(Teacher teacher) throws Exception {
+        String sql = "INSERT INTO "+config.getConfigurationEntry(TEACHER_DATA_TABLE)+" (id,name) VALUES(?,?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setInt(1,teacher.getID());
+            statement.setString(2,teacher.getName());
+            statement.executeUpdate();
+            teacher.getDisciplines().stream().forEach(s-> {
+                try {
+                    saveDisciplineRecord(s);
+                } catch (Exception e) {
+                    log.info(e.getMessage());
+                }
+            });
+        } catch (SQLException e) {
+            throw new Exception("Teacher record already exists");
+        }
     }
 
     @Override
-    public void deleteTeacherRecord(Teacher teacher) {
-
+    public void deleteTeacherRecord(Teacher teacher) throws IOException {
+        deleteRecord(config.getConfigurationEntry(TEACHER_DATA_TABLE),teacher.getID());
+        teacher.getDisciplines().stream().forEach(s->deleteDisciplineRecord(s));
     }
 
     @Override
-    public void updateTeacherRecord(Teacher teacher) {
-
+    public void updateTeacherRecord(Teacher teacher) throws IOException {
+        String sql = "UPDATE "+config.getConfigurationEntry(TEACHER_DATA_TABLE)+ " SET name = '"+teacher.getName()+"' WHERE id = " + teacher.getID();
+        try(Statement statement = connection.createStatement()){
+            statement.executeUpdate(sql);
+            teacher.getDisciplines().stream().forEach(s-> {
+                try {
+                    updateDisciplineRecord(s);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public Teacher getTeacherRecordById(int id) {
-        return null;
+    public Teacher getTeacherRecordById(int id) throws Exception {
+        Teacher teacher =  new Teacher();
+        String sql = "SELECT * FROM "+config.getConfigurationEntry(TEACHER_DATA_TABLE)+" WHERE id = "+id;
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            ResultSet set = statement.executeQuery();
+            if(set.next()){
+                teacher.setID(set.getInt("id"));
+                teacher.setName(set.getString("name"));
+                teacher.setDisciplines(getDisciplineRecordsByTeacherId(id));
+            }
+
+        } catch (SQLException e) {
+            throw new Exception("Teacher record wasn't found");
+        }
+        return teacher;
     }
 
     @Override

@@ -1,10 +1,5 @@
 package ru.sfedu;
 
-import ru.sfedu.Model.Discipline;
-
-import java.util.Arrays;
-import java.util.List;
-
 public class Constants {
     public static final String USER_DATA_BASE = "userDataBase";
     public static final String URL_DATA_BASE = "urlDataBase";
@@ -22,4 +17,9 @@ public class Constants {
     public static final String TEACHER_DATA_TABLE = "teacherTable";
     public static final String UN_EVENTS_DATA_TABLE = "unEventsTable";
 
+    public enum TypeOfSchedule {
+        LESSONS,
+        UNIVERSITY_EVENTS,
+        EXAMS
+    }
 }

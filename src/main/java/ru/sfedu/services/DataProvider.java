@@ -47,10 +47,10 @@ public interface DataProvider {
     public void deleteStudentWorkRecord(StudentWork studentWork) throws IOException;
     public void updateStudentWorkRecord(StudentWork studentWork) throws IOException;
     public StudentWork getStudentWorkRecordById(int id) throws Exception;
-    public void saveTeacherRecord(Teacher teacher);
-    public void deleteTeacherRecord(Teacher teacher);
-    public void updateTeacherRecord(Teacher teacher);
-    public Teacher getTeacherRecordById(int id);
+    public void saveTeacherRecord(Teacher teacher) throws Exception;
+    public void deleteTeacherRecord(Teacher teacher) throws IOException;
+    public void updateTeacherRecord(Teacher teacher) throws IOException, SQLException;
+    public Teacher getTeacherRecordById(int id) throws Exception;
     public void saveUnEventRecord(UniversityEvent universityEvent) throws Exception;
     public void deleteUnEventRecord(UniversityEvent universityEvent) throws IOException;
     public void updateUnEventRecord(UniversityEvent universityEvent) throws IOException;

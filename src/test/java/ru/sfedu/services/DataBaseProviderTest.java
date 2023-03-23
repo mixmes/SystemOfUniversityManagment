@@ -2,8 +2,8 @@ package ru.sfedu.services;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.sfedu.Constants;
 import ru.sfedu.Model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 import static ru.sfedu.Constants.*;
@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,11 +26,11 @@ class DataBaseProviderTest {
     public static final Exam exam = new Exam(1,1,"702k","12.10","Math","Main exam","Bond James");
     public static final Lesson lesson = new Lesson(1,1,"702k","12.10","Math","Lection","Bond James");
     public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k","12.00","game");
-    public static final Schedule schedule = new Schedule(1,1,TypeOfSchedule.LESSONS);
+    public static final Schedule schedule = new Schedule(1,1, Constants.TypeOfSchedule.LESSONS);
     public static final StudentWork studentWork = new StudentWork(1,1);
     public static final Student student  = new Student(1,"Smernikov Mihail",1);
     public static final StudentGroup studentGroup = new StudentGroup(1,1,"Priborostroenie","12.03.01");
-
+    public static final Teacher teacher = new Teacher(1,"Kotov Igor");
     public static final Connection connection;
 
     static {
@@ -118,6 +117,8 @@ class DataBaseProviderTest {
         studentWork.setHomework(false);
 
         studentGroup.setGroupComposition(new ArrayList<>(List.of(student)));
+
+        teacher.setDisciplines(new ArrayList<>(List.of(math)));
     }
     @Test
     void saveDisciplineRecord() throws Exception {
@@ -375,5 +376,26 @@ class DataBaseProviderTest {
         db.updateStudentGroupRecord(studentGroup);
 
         assertEquals("Math",db.getStudentGroupRecordById(studentGroup.getID()).getName());
+    }
+    @Test
+    public void testSaveTeacherRecord() throws Exception {
+        db.saveTeacherRecord(teacher);
+
+        assertEquals(teacher,db.getTeacherRecordById(teacher.getID()));
+    }
+    @Test
+    public void testSaveExistingTeacherRecord() throws Exception {
+        db.saveTeacherRecord(teacher);
+
+        Exception exception = assertThrows(Exception.class,()->{db.saveTeacherRecord(teacher);});
+        assertEquals("Teacher record already exists",exception.getMessage());
+    }
+    @Test
+    public void testUpdateTeacherRecord() throws Exception {
+        db.saveTeacherRecord(teacher);
+        teacher.setName("Sobakin Igor");
+        db.updateTeacherRecord(teacher);
+
+        assertEquals("Sobakin Igor",db.getTeacherRecordById(teacher.getID()).getName());
     }
 }

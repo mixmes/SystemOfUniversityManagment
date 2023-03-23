@@ -1696,3 +1696,21 @@
 2023-03-23 13:56:24,295 INFO r.s.s.DataBaseProvider [main] Student group record was updated
 2023-03-23 13:56:24,310 INFO r.s.s.DataBaseProvider [main] Student records was obtained
 2023-03-23 13:56:24,310 INFO r.s.s.DataBaseProvider [main] Student group record was obtained
+2023-03-23 14:19:09,426 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:19:09,428 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:19:43,474 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:19:43,478 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:21:05,948 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:21:05,952 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:22:40,279 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:22:40,282 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:24:20,241 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:24:20,246 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:24:39,945 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:24:39,952 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:25:04,276 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:25:04,281 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:25:04,308 INFO r.s.s.DataBaseProvider [main] Discipline record was updated
+2023-03-23 14:25:17,316 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-23 14:25:17,320 INFO r.s.s.DataBaseProvider [main] Discipline record was saved
+2023-03-23 14:25:17,342 INFO r.s.s.DataBaseProvider [main] Discipline record was updated

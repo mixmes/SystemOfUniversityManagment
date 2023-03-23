@@ -1,5 +1,5 @@
 package ru.sfedu.Model;
-import ru.sfedu.Model.TypeOfSchedule;
+import ru.sfedu.Constants;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -7,10 +7,10 @@ import java.util.Objects;
 public class Schedule  {
     private int ID;
     private int semester;
-    private  TypeOfSchedule type;
+    private Constants.TypeOfSchedule type;
     private ArrayList<Event> events = new ArrayList<>();
     public Schedule(){}
-    public Schedule(int ID, int semester, TypeOfSchedule type){
+    public Schedule(int ID, int semester, Constants.TypeOfSchedule type){
         this.ID = ID;
         this.semester = semester;
         this.type = type;
@@ -32,11 +32,11 @@ public class Schedule  {
         this.semester = semester;
     }
 
-    public TypeOfSchedule getType() {
+    public Constants.TypeOfSchedule getType() {
         return type;
     }
 
-    public void setType(TypeOfSchedule type) {
+    public void setType(Constants.TypeOfSchedule type) {
         this.type = type;
     }
 
