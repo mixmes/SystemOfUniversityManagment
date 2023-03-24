@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static ru.sfedu.Constants.MAX_MARK;
+
 public class Student {
     private static final Logger log = LogManager.getLogger(Discipline.class);
     private int ID;
@@ -50,6 +52,18 @@ public class Student {
 
     public void setStudentGroupId(int studentGroupId) {
         this.studentGroupId = studentGroupId;
+    }
+    public void checkHavingDiscipline(Discipline discipline) throws Exception {
+        if(this.studentWorks.stream().noneMatch(s->s.getDiscipline() == discipline.getName())){
+            log.error("No such discipline");
+            throw new Exception("Student doesn't have such discipline");
+        }
+    }
+    public void checkHavingStudentWork(String nameOfWork) throws Exception {
+        if(this.studentWorks.stream().noneMatch(s->s.getNameOfWork() == nameOfWork)){
+            log.error("No such work");
+            throw new Exception("Student doesn't have such work");
+        }
     }
 
     @Override

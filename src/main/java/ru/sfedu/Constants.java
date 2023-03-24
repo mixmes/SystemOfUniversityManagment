@@ -16,6 +16,7 @@ public class Constants {
     public static final String STUDENT_WORK_DATA_TABLE = "studentWorkTable";
     public static final String TEACHER_DATA_TABLE = "teacherTable";
     public static final String UN_EVENTS_DATA_TABLE = "unEventsTable";
+    public static final int MAX_MARK = 10;
 
     public enum TypeOfSchedule {
         LESSONS,
