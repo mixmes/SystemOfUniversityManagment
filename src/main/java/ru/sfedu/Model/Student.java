@@ -3,6 +3,7 @@ package ru.sfedu.Model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -64,6 +65,15 @@ public class Student {
             log.error("No such work");
             throw new Exception("Student doesn't have such work");
         }
+    }
+    public void createStudentWork(File work,String nameOfWork,Discipline discipline){
+        StudentWork studWork = new StudentWork(1,this.getID());
+        studWork.setNameOfWork(nameOfWork);
+        studWork.setDiscipline(discipline.getName());
+        studWork.setFileOfWork(work);
+        studWork.setHomework(true);
+
+        this.studentWorks.add(studWork);
     }
 
     @Override
