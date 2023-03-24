@@ -23,9 +23,9 @@ class DataBaseProviderTest {
     public static final Lection lection = new Lection(1,1,"/home/../","Lection 21/02/2012");
     public static final PracticalTask practTask = new PracticalTask(1,1,"/home/...","Deadline 21.02.2012");
     public static final EducationalMaterial edMat = new EducationalMaterial(1,1);
-    public static final Exam exam = new Exam(1,1,"702k","12.10","Math","Main exam","Bond James");
-    public static final Lesson lesson = new Lesson(1,1,"702k","12.10","Math","Lection","Bond James");
-    public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k","12.00","game");
+    public static final Exam exam = new Exam(1,1,"702k",12,10,DayOfWeek.MONDAY,"Math","Main exam","Bond James");
+    public static final Lesson lesson = new Lesson(1,1,"702k",12,10,DayOfWeek.SUNDAY,"Math","Lection","Bond James");
+    public static final UniversityEvent unEvent = new UniversityEvent(1,1,"500k",12,10,DayOfWeek.MONDAY,"game");
     public static final Schedule schedule = new Schedule(1,1, Constants.TypeOfSchedule.LESSONS);
     public static final StudentWork studentWork = new StudentWork(1,1);
     public static final Student student  = new Student(1,"Smernikov Mihail",1);

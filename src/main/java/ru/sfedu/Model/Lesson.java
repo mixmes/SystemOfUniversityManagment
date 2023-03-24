@@ -1,5 +1,7 @@
 package ru.sfedu.Model;
 
+import ru.sfedu.Constants;
+
 import java.util.Date;
 import java.util.Objects;
 
@@ -10,11 +12,8 @@ public class Lesson extends Event{
     public Lesson(){
         this.nameOfDiscipline = this.nameOfTeacher = this.type = "Null";
     }
-    public Lesson(int ID,int scheduleId, String place, String time, String nameOfDiscipline, String type , String nameOfTeacher){
-        this.ID = ID;
-        this.scheduleID = scheduleId;
-        this.place = place;
-        this.time = time;
+    public Lesson(int ID, int scheduleId, String place, int hours, int minutes, Constants.DayOfWeek day, String nameOfDiscipline, String type , String nameOfTeacher){
+        super(ID,scheduleId,place,hours,minutes,day);
         this.nameOfDiscipline = nameOfDiscipline;
         this.nameOfTeacher = nameOfTeacher;
         this.type = type;

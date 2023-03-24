@@ -599,6 +599,7 @@ public class DataBaseProvider implements DataProvider{
                 schedule.getEvents().stream().forEach(s->
                 {
                     try {
+                        Lesson lesson = (Lesson) s;
                         saveLessonRecord((Lesson) s);
                     } catch (Exception e) {
                         throw new RuntimeException(e);

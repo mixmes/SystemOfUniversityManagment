@@ -1,5 +1,8 @@
 package ru.sfedu.Model;
 
+import ru.sfedu.Constants;
+
+import java.sql.Time;
 import java.util.Date;
 import java.util.Objects;
 
@@ -8,13 +11,10 @@ public class Exam extends Event{
     private String type;
     private String nameOfTeacher;
     public Exam(){
-        this.nameOfDiscipline = this.nameOfTeacher = this.type = this.place = "Null";
+        this.nameOfDiscipline = this.nameOfTeacher = this.type = "Null";
     }
-    public Exam(int ID,int scheduleId, String place, String time, String nameOfDiscipline , String type , String nameOfTeacher){
-        this.ID = ID;
-        this.scheduleID = scheduleId;
-        this.place = place;
-        this.time = time;
+    public Exam(int ID, int scheduleId, String place, int hours, int minutes, Constants.DayOfWeek day, String nameOfDiscipline , String type , String nameOfTeacher){
+        super(ID,scheduleId,place,hours,minutes,day);
         this.nameOfDiscipline = nameOfDiscipline;
         this.type = type;
         this.nameOfTeacher = nameOfTeacher;

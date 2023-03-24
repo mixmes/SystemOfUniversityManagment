@@ -23,4 +23,14 @@ public class Constants {
         UNIVERSITY_EVENTS,
         EXAMS
     }
+    public enum DayOfWeek{
+        SUNDAY,
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY
+
+    }
 }
