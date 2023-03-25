@@ -221,16 +221,17 @@ public class DataBaseProvider implements DataProvider{
 
     @Override
     public void saveExamRecord(Exam exam) throws Exception {
-        String sql = "INSERT INTO "+config.getConfigurationEntry(EXAM_DATA_TABLE) + " (id,scheduleId,place,time,nameOfDiscipline,type,nameOfTeacher)" +
-                "VALUES(?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO "+config.getConfigurationEntry(EXAM_DATA_TABLE) + " (id,scheduleId,place,time,dayOfWeek,nameOfDiscipline,type,nameOfTeacher)" +
+                "VALUES(?,?,?,?,?,?,?,?)";
         try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
             preparedStatement.setInt(1,exam.getID());
             preparedStatement.setInt(2,exam.getScheduleID());
             preparedStatement.setString(3,exam.getPlace());
-            preparedStatement.setString(4,exam.getTime());
-            preparedStatement.setString(5,exam.getNameOfDiscipline());
-            preparedStatement.setString(6,exam.getType());
-            preparedStatement.setString(7,exam.getNameOfTeacher());
+            preparedStatement.setString(4,exam.getTime().toString());
+            preparedStatement.setString(5,exam.getDayOfWeek().name());
+            preparedStatement.setString(6,exam.getNameOfDiscipline());
+            preparedStatement.setString(7,exam.getType().toString());
+            preparedStatement.setString(8,exam.getNameOfTeacher());
             preparedStatement.executeUpdate();
             log.info("Exam record was saved");
         } catch (SQLException e) {
@@ -257,7 +258,8 @@ public class DataBaseProvider implements DataProvider{
             exam.setID(resultSet.getInt("id"));
             exam.setScheduleID(resultSet.getInt("scheduleId"));
             exam.setPlace(resultSet.getString("place"));
-            exam.setTime(resultSet.getString("time"));
+            exam.setTime(resultSet.getTime("time"));
+            exam.setDayOfWeek(DayOfWeek.valueOf(resultSet.getString("dayOfWeek")));
             exam.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
             exam.setType(resultSet.getString("type"));
             exam.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
@@ -282,7 +284,8 @@ public class DataBaseProvider implements DataProvider{
                 exam.setID(resultSet.getInt("id"));
                 exam.setScheduleID(resultSet.getInt("scheduleId"));
                 exam.setPlace(resultSet.getString("place"));
-                exam.setTime(resultSet.getString("time"));
+                exam.setTime(resultSet.getTime("time"));
+                exam.setDayOfWeek(DayOfWeek.valueOf(resultSet.getString("dayOfWeek")));
                 exam.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
                 exam.setType(resultSet.getString("type"));
                 exam.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
@@ -381,16 +384,17 @@ public class DataBaseProvider implements DataProvider{
 
     @Override
     public void saveLessonRecord(Lesson lesson) throws Exception {
-        String sql = "INSERT INTO "+config.getConfigurationEntry(LESSON_DATA_TABLE) + " (id,scheduleId,place,time,nameOfDiscipline,type,nameOfTeacher)" +
-                "VALUES(?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO "+config.getConfigurationEntry(LESSON_DATA_TABLE) + " (id,scheduleId,place,time,dayOfWeek,nameOfDiscipline,type,nameOfTeacher)" +
+                "VALUES(?,?,?,?,?,?,?,?)";
         try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
             preparedStatement.setInt(1,lesson.getID());
             preparedStatement.setInt(2,lesson.getScheduleID());
             preparedStatement.setString(3,lesson.getPlace());
-            preparedStatement.setString(4,lesson.getTime());
-            preparedStatement.setString(5,lesson.getNameOfDiscipline());
-            preparedStatement.setString(6,lesson.getType());
-            preparedStatement.setString(7,lesson.getNameOfTeacher());
+            preparedStatement.setTime(4,lesson.getTime());
+            preparedStatement.setString(5,lesson.getDayOfWeek().name());
+            preparedStatement.setString(6,lesson.getNameOfDiscipline());
+            preparedStatement.setString(7,lesson.getType());
+            preparedStatement.setString(8,lesson.getNameOfTeacher());
             preparedStatement.executeUpdate();
             log.info("Lesson record was saved");
         } catch (SQLException e) {
@@ -430,7 +434,8 @@ public class DataBaseProvider implements DataProvider{
             lesson.setID(resultSet.getInt("id"));
             lesson.setScheduleID(resultSet.getInt("scheduleId"));
             lesson.setPlace(resultSet.getString("place"));
-            lesson.setTime(resultSet.getString("time"));
+            lesson.setTime(resultSet.getTime("time"));
+            lesson.setDayOfWeek(DayOfWeek.valueOf(resultSet.getString("dayOfWeek")));
             lesson.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
             lesson.setType(resultSet.getString("type"));
             lesson.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
@@ -455,7 +460,8 @@ public class DataBaseProvider implements DataProvider{
                 lesson.setID(resultSet.getInt("id"));
                 lesson.setScheduleID(resultSet.getInt("scheduleId"));
                 lesson.setPlace(resultSet.getString("place"));
-                lesson.setTime(resultSet.getString("time"));
+                lesson.setTime(resultSet.getTime("time"));
+                lesson.setDayOfWeek(DayOfWeek.valueOf(resultSet.getString("dayOfWeek")));
                 lesson.setNameOfDiscipline(resultSet.getString("nameOfDiscipline"));
                 lesson.setType(resultSet.getString("type"));
                 lesson.setNameOfTeacher(resultSet.getString("nameOfTeacher"));
@@ -709,7 +715,7 @@ public class DataBaseProvider implements DataProvider{
 
     @Override
     public void saveStudentRecord(Student student) throws Exception {
-        String sql = "INSERT INTO " +config.getConfigurationEntry(STUDENT_DATA_TABLE)+ " (id,name) VALUES(?,?)";
+        String sql = "INSERT INTO " +config.getConfigurationEntry(STUDENT_DATA_TABLE)+ " (id,name,studentGroupId) VALUES(?,?,?)";
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setInt(1,student.getID());
             statement.setString(2,student.getName());
@@ -873,7 +879,7 @@ public class DataBaseProvider implements DataProvider{
 
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new Exception("Student work record already exists");
         }
     }
 
@@ -1005,14 +1011,15 @@ public class DataBaseProvider implements DataProvider{
 
     @Override
     public void saveUnEventRecord(UniversityEvent unEvent) throws Exception {
-        String sql = "INSERT INTO "+config.getConfigurationEntry(UN_EVENTS_DATA_TABLE) + " (id,scheduleId,place,time,information)" +
-                " VALUES(?,?,?,?,?)";
+        String sql = "INSERT INTO "+config.getConfigurationEntry(UN_EVENTS_DATA_TABLE) + " (id,scheduleId,place,time,dayOfWeek,information)" +
+                " VALUES(?,?,?,?,?,?)";
         try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
             preparedStatement.setInt(1,unEvent.getID());
             preparedStatement.setInt(2,unEvent.getScheduleID());
             preparedStatement.setString(3,unEvent.getPlace());
-            preparedStatement.setString(4,unEvent.getTime());
-            preparedStatement.setString(5,unEvent.getInformation());
+            preparedStatement.setTime(4,unEvent.getTime());
+            preparedStatement.setString(5,unEvent.getDayOfWeek().name());
+            preparedStatement.setString(6,unEvent.getInformation());
             preparedStatement.executeUpdate();
             log.info("University event record was saved");
         } catch (SQLException e) {
@@ -1051,7 +1058,8 @@ public class DataBaseProvider implements DataProvider{
             universityEvent.setID(resultSet.getInt("id"));
             universityEvent.setScheduleID(resultSet.getInt("scheduleId"));
             universityEvent.setPlace(resultSet.getString("place"));
-            universityEvent.setTime(resultSet.getString("time"));
+            universityEvent.setTime(resultSet.getTime("time"));
+            universityEvent.setDayOfWeek(DayOfWeek.valueOf(resultSet.getString("dayOfWeek")));
             universityEvent.setInformation(resultSet.getString("information"));
             log.info("University event record was obtained");
         } catch (SQLException e) {
@@ -1074,7 +1082,8 @@ public class DataBaseProvider implements DataProvider{
                 unEvent.setID(resultSet.getInt("id"));
                 unEvent.setScheduleID(resultSet.getInt("scheduleId"));
                 unEvent.setPlace(resultSet.getString("place"));
-                unEvent.setTime(resultSet.getString("time"));
+                unEvent.setTime(resultSet.getTime("time"));
+                unEvent.setDayOfWeek(DayOfWeek.valueOf(resultSet.getString("dayOfWeek")));
                 unEvent.setInformation(resultSet.getString("information"));
                 unEvents.add(unEvent);
             }

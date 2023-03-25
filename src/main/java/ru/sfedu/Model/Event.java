@@ -21,6 +21,7 @@ public class Event {
         this.dayOfWeek = day;
     }
 
+
     public int getID() {
         return ID;
     }

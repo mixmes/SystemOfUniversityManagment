@@ -52,6 +52,7 @@ class DataBaseProviderTest {
             throw new RuntimeException(e);
         }
     }
+
     @AfterEach
     void cleanTables() throws SQLException, IOException {
         String sql = "TRUNCATE "+config.getConfigurationEntry(ED_MAT_DATA_TABLE);
@@ -141,7 +142,7 @@ class DataBaseProviderTest {
         math.setName("Not math");
         db.updateDisciplineRecord(math);
 
-        assertEquals("Not math",db.getDiscicplineRecordById(math.getID()));
+        assertEquals("Not math",db.getDiscicplineRecordById(math.getID()).getName());
 
         math.setName("Math");
     }
@@ -336,7 +337,7 @@ class DataBaseProviderTest {
         assertEquals(student,db.getStudentRecordById(student.getID()));
     }
     @Test
-    public void testSaveExistingRecord() throws Exception {
+    public void testSaveExistingStudentRecord() throws Exception {
         db.saveStudentRecord(student);
 
         Exception exception = assertThrows(Exception.class,()->{
