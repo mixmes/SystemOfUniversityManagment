@@ -15,7 +15,7 @@ public class Student {
     private String name ;
     private ArrayList<StudentWork> studentWorks = new ArrayList<>();
     private int studentGroupId ;
-    public Student(){this.name = "Null Null  Null";}
+    public Student(){}
     public Student(int ID, String name,int studentGroupId){
         this.ID = ID;
         this.name = name;
@@ -74,6 +74,7 @@ public class Student {
         studWork.setHomework(true);
 
         this.studentWorks.add(studWork);
+        log.info("Student work was created");
     }
 
     @Override

@@ -15,9 +15,7 @@ public class Teacher {
     private int ID;
     private String name;
     private ArrayList<Discipline> disciplines = new ArrayList<>();
-    public Teacher(){
-        this.name = "Null Null Null";
-    }
+    public Teacher(){}
     public Teacher(int ID, String name){
         this.ID = ID;
         this.name = name;
@@ -58,16 +56,19 @@ public class Teacher {
         student.checkHavingStudentWork(nameOfWork);
         checkMaxMark(mark);
         student.getStudentWorks().stream().filter(s->s.getNameOfWork() == nameOfWork).findFirst().get().setMark(mark);
+        log.info("Work estimated");
     }
     public StudentWork retrieveStudentWork(Student student, String nameOfWork,Discipline discipline) throws Exception {
         checkHavingDiscipline(discipline);
         student.checkHavingDiscipline(discipline);
         student.checkHavingStudentWork(nameOfWork);
+        log.info("Work retrieved");
         return student.getStudentWorks().stream().filter(s->s.getNameOfWork() == nameOfWork).findFirst().get();
     }
     public void createEducationMaterial(Discipline discipline) throws Exception {
         checkHavingDiscipline(discipline);
         this.getDisciplines().stream().filter(s->s.equals(discipline)).findFirst().get().setEducationalMaterial(new EducationalMaterial());
+        log.info("Education matarial record was created");
     }
     public void addPracticalTask(Discipline discipline,PracticalTask practicalTask) throws Exception {
         checkHavingDiscipline(discipline);
@@ -117,6 +118,16 @@ public class Teacher {
         if(this.getDisciplines().stream().noneMatch(s->s.equals(discipline))){
             log.error("No such discipline");
             throw new Exception("Teacher doesn't have such discipline");
+        }
+    }
+    public void appendDiscipline(Discipline discipline) throws Exception {
+        if(disciplines.stream().noneMatch(s->s.equals(discipline))){
+            disciplines.add(discipline);
+            log.info("Discipline was added");
+        }
+        else {
+            log.error("Discipline already exists");
+            throw new Exception("Discipline already exists in this list");
         }
     }
 

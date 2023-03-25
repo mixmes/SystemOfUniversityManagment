@@ -2,14 +2,13 @@ package ru.sfedu.services;
 
 import org.junit.jupiter.api.Test;
 import ru.sfedu.Constants;
+import ru.sfedu.HistoryContent.HistoryContent;
 import ru.sfedu.Model.Discipline;
 import ru.sfedu.Model.Teacher;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HistoryClientTest {
     @Test

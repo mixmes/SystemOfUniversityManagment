@@ -6,8 +6,8 @@ import java.util.Objects;
 public class StudentWork {
     private int ID ;
     private int studentID;
-    private String nameOfWork = new String();
-    private String discipline = new String();
+    private String nameOfWork ;
+    private String discipline ;
     private int mark ;
     private boolean homework;
     private File fileOfWork ;

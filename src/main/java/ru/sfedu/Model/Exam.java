@@ -10,8 +10,7 @@ public class Exam extends Event{
     private String nameOfDiscipline ;
     private String type;
     private String nameOfTeacher;
-    public Exam(){
-        this.nameOfDiscipline = this.nameOfTeacher = this.type = "Null";
+    public Exam() {
     }
     public Exam(int ID, int scheduleId, String place, int hours, int minutes, Constants.DayOfWeek day, String nameOfDiscipline , String type , String nameOfTeacher){
         super(ID,scheduleId,place,hours,minutes,day);

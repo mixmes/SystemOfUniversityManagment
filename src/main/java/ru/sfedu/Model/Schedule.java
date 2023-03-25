@@ -1,10 +1,13 @@
 package ru.sfedu.Model;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.sfedu.Constants;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Schedule  {
+    private static Logger log = LogManager.getLogger();
     private int ID;
     private int semester;
     private Constants.TypeOfSchedule type;
@@ -50,8 +53,10 @@ public class Schedule  {
     public void appendEventToSchedule(Event event) throws Exception {
         if(events.stream().noneMatch(s->s.equals(event))){
             events.add(event);
+            log.info("Event was appended");
         }
         else {
+            log.error("Event record already exists");
             throw new Exception("Event record already exists");
         }
     }

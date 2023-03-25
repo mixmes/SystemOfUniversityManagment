@@ -8,7 +8,7 @@ public class PracticalTask {
     private int educationMaterialID;
     private String information;
     private File task;
-    public PracticalTask(){this.information = "Null";}
+    public PracticalTask(){}
     public PracticalTask(int ID,int educationMaterialID,String URI, String information){
         this.educationMaterialID = educationMaterialID;
         this.ID = ID;

@@ -9,9 +9,7 @@ public class Lesson extends Event{
     private String nameOfDiscipline;
     private String type;
     private String nameOfTeacher;
-    public Lesson(){
-        this.nameOfDiscipline = this.nameOfTeacher = this.type = "Null";
-    }
+    public Lesson(){}
     public Lesson(int ID, int scheduleId, String place, int hours, int minutes, Constants.DayOfWeek day, String nameOfDiscipline, String type , String nameOfTeacher){
         super(ID,scheduleId,place,hours,minutes,day);
         this.nameOfDiscipline = nameOfDiscipline;

@@ -7,9 +7,7 @@ public class Lection {
     private int educationMaterialID;
     private String information;
     private File lection ;
-    public Lection(){
-        this.information = "Null";
-    }
+    public Lection(){}
     public Lection(int ID,int educationMaterialID,String URI,String information){
         this.ID = ID;
         this.educationMaterialID = educationMaterialID;

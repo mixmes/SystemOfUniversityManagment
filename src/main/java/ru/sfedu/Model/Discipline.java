@@ -9,8 +9,6 @@ public class Discipline {
 
     private EducationalMaterial educationalMaterial = new EducationalMaterial();
     public Discipline(){
-        this.name = "Null";
-        this.typeOfMarking = "Null";
     }
     public Discipline(int id,int teacherID , String name , String typeOfMarking){
         this.ID = id;

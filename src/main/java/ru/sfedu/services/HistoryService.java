@@ -9,6 +9,7 @@ import com.mongodb.client.MongoDatabase;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.util.JSON;
 import org.bson.Document;
+import ru.sfedu.HistoryContent.HistoryContent;
 
 import java.text.SimpleDateFormat;
 import java.util.TimeZone;

@@ -15,8 +15,6 @@ public class StudentGroup {
     ArrayList<Student> groupComposition = new ArrayList<>();
 
     public StudentGroup(){
-        this.name = "Null";
-        this.codeOfGroup = "XXXXXXXXX";
     }
     public StudentGroup(int ID,int course, String name, String codeOfGroup){
         this.ID = ID;
@@ -90,6 +88,7 @@ public class StudentGroup {
         if(!student.isPresent()){
             throw new Exception("Student doesn't exist");
         }
+        log.info("Student was obtained");
         return student.get();
     }
 
