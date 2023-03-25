@@ -17,6 +17,11 @@ public class Constants {
     public static final String TEACHER_DATA_TABLE = "teacherTable";
     public static final String UN_EVENTS_DATA_TABLE = "unEventsTable";
     public static final int MAX_MARK = 10;
+    public static final String SYSTEM_ACTOR = "system";
+    public static final String MONGO_URL = "mongodb://localhost:27017";
+    public static final String DB_NAME = "university";
+    public static final String NAME_COLLECTION = "history";
+
 
     public enum TypeOfSchedule {
         LESSONS,
@@ -32,5 +37,8 @@ public class Constants {
         FRIDAY,
         SATURDAY
 
+    }
+    public enum Status{
+        FAULT,SUCCESS
     }
 }
