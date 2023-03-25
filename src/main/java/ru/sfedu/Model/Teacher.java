@@ -52,10 +52,6 @@ public class Teacher {
             throw new Exception("Mark exceed max mark");
         }
     }
-    public void addLectionFile(Discipline discipline, Lection lection){
-        discipline.getEducationalMaterial().getLections().add(lection);
-        log.info("Lection file was published");
-    }
     public void estimateStudentWork(Student student,String nameOfWork,Discipline discipline,int mark) throws Exception {
         checkHavingDiscipline(discipline);
         student.checkHavingDiscipline(discipline);

@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Optional;
 
 public class StudentGroup {
     private static final Logger log =LogManager.getLogger(Discipline.class);
@@ -63,15 +64,34 @@ public class StudentGroup {
     public void setGroupComposition(ArrayList<Student> groupComposition) {
         this.groupComposition = groupComposition;
     }
-    public void addStudentToGroup(Student student){
-        groupComposition.add(student);
-        log.info("Student was added to group");
-    }
-    public void deleteStudentFromGroup(Student student){
-        groupComposition.remove(student);
-        log.info("Student was deleted from group");
-    }
+    public void addStudentToGroup(Student student) throws Exception {
+        if(groupComposition.stream().noneMatch(s->s.equals(student))){
+            groupComposition.add(student);
+            log.info("Student was added to group");
+        }
+        else {
+            log.error("Student already in this group");
+            throw new Exception("Student already in this group");
+        }
 
+    }
+    public void deleteStudentFromGroup(Student student) throws Exception {
+        if(groupComposition.stream().anyMatch(s->s.equals(student))){
+            groupComposition.remove(student);
+            log.info("Student was deleted from group");
+        }
+        else {
+            log.error("Student doesn't exists");
+            throw new Exception("Student doesn't exist in this group");
+        }
+    }
+    public Student getStudentById(int id) throws Exception {
+        Optional<Student> student = groupComposition.stream().filter(s->s.getID() == id).findFirst();
+        if(!student.isPresent()){
+            throw new Exception("Student doesn't exist");
+        }
+        return student.get();
+    }
 
     @Override
     public boolean equals(Object o) {

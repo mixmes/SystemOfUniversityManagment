@@ -47,7 +47,14 @@ public class Schedule  {
     public void setEvents(ArrayList<Event> events) {
         this.events = events;
     }
-
+    public void appendEventToSchedule(Event event) throws Exception {
+        if(events.stream().noneMatch(s->s.equals(event))){
+            events.add(event);
+        }
+        else {
+            throw new Exception("Event record already exists");
+        }
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

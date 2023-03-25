@@ -2132,3 +2132,16 @@
 2023-03-25 11:00:05,116 INFO r.s.s.DataBaseProvider [main] Schedule record was saved
 2023-03-25 11:00:05,837 INFO r.s.s.DataBaseProvider [main] Lection record was saved
 2023-03-25 11:00:05,847 INFO r.s.s.DataBaseProvider [main] Education material record was saved
+2023-03-25 11:13:14,436 INFO r.s.M.Discipline [main] Student was added to group
+2023-03-25 11:14:43,489 INFO r.s.M.Discipline [main] Student was added to group
+2023-03-25 11:14:43,494 ERROR r.s.M.Discipline [main] Student already in this group
+2023-03-25 11:14:49,746 INFO r.s.M.Discipline [main] Student was added to group
+2023-03-25 11:14:49,751 ERROR r.s.M.Discipline [main] Student already in this group
+2023-03-25 11:15:42,843 INFO r.s.M.Discipline [main] Student was added to group
+2023-03-25 11:15:42,848 ERROR r.s.M.Discipline [main] Student already in this group
+2023-03-25 11:17:07,852 INFO r.s.M.Discipline [main] Student was added to group
+2023-03-25 11:17:07,855 INFO r.s.M.Discipline [main] Student was deleted from group
+2023-03-25 11:17:20,126 INFO r.s.M.Discipline [main] Student was added to group
+2023-03-25 11:17:20,130 INFO r.s.M.Discipline [main] Student was deleted from group
+2023-03-25 11:18:40,407 ERROR r.s.M.Discipline [main] Student doesn't exists
+2023-03-25 11:18:53,230 ERROR r.s.M.Discipline [main] Student doesn't exists
